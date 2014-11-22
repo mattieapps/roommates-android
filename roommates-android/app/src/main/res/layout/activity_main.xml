@@ -54,7 +54,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DOWN"
+        android:text="@string/down"
         android:id="@+id/rentDownBtn"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
@@ -62,7 +62,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UP"
+        android:text="@string/up"
         android:id="@+id/rentUpBtn"
         android:layout_above="@+id/rentDownBtn"
         android:layout_alignParentStart="true" />
@@ -70,7 +70,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DOWN"
+        android:text="@string/down"
         android:id="@+id/peopleDownBtn"
         android:layout_alignTop="@+id/rentDownBtn"
         android:layout_alignParentEnd="true" />
@@ -78,7 +78,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UP"
+        android:text="@string/up"
         android:id="@+id/peopleUpBtn"
         android:layout_alignBottom="@+id/rentUpBtn"
         android:layout_alignParentEnd="true" />

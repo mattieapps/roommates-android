@@ -1,5 +1,6 @@
 package com.mattieapps.roommates;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -87,6 +89,8 @@ public class MainActivity extends BaseActivity {
                 mPeopleCountText.setText(String.valueOf(output));//Convert out to string
             }
         });
+
+        closeKeyboard();
     }
 
 
@@ -110,5 +114,12 @@ public class MainActivity extends BaseActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void closeKeyboard(){
+        InputMethodManager imm = (InputMethodManager)getSystemService(
+                Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(mRentPriceText.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(mPeopleCountText.getWindowToken(), 0);
     }
 }

@@ -51,8 +51,8 @@ public class TipCalActivity extends BaseActivity {
                 .title("Gratuity amount")
                 .customView(R.layout.gratuity_dialog)
                 .theme(Theme.LIGHT)  // the default is light, so you don't need this line
-                .positiveText("Agree")  // the default for textual dialogs (not list or custom view dialogs) is 'OK'
-                .negativeText("Disagree")  // leaving this line out will remove the negative button
+                .positiveText("Set")  // the default for textual dialogs (not list or custom view dialogs) is 'OK'
+                .negativeText("Cancel")  // leaving this line out will remove the negative button
                 .build()
                 .show();
     }
