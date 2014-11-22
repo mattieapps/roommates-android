@@ -41,15 +41,19 @@ public class TipCalActivity extends BaseActivity {
         mPickGratuityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new MaterialDialog.Builder(getApplication())
-                        .title("Gratuity amount")
-                        .content("Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.")
-                        .theme(Theme.LIGHT)  // the default is light, so you don't need this line
-                        .positiveText("Agree")  // the default for textual dialogs (not list or custom view dialogs) is 'OK'
-                        .negativeText("Disagree")  // leaving this line out will remove the negative button
-                        .build()
-                        .show();
+                gratuityDialog();
             }
         });
+    }
+
+    private void gratuityDialog() {
+        new MaterialDialog.Builder(this)
+                .title("Gratuity amount")
+                .customView(R.layout.gratuity_dialog)
+                .theme(Theme.LIGHT)  // the default is light, so you don't need this line
+                .positiveText("Agree")  // the default for textual dialogs (not list or custom view dialogs) is 'OK'
+                .negativeText("Disagree")  // leaving this line out will remove the negative button
+                .build()
+                .show();
     }
 }
