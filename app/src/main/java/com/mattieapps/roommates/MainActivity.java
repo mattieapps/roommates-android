@@ -1,8 +1,8 @@
 package com.mattieapps.roommates;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,13 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends BaseActivity {
 
     EditText mRentPriceText, mPeopleCountText;
     Button mRentUpBtn, mRentDownBtn, mPeopleUpBtn, mPeopleDownBtn;
 
-    int rentPrice;
-    int peopleCount;
+    int rentPrice = 0;
+    int peopleCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,14 @@ public class MainActivity extends ActionBarActivity {
                 .withMargins(0, 0, 0, 16)
                 .create();
 
+        fabButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TipCalActivity.class);
+                startActivity(intent);
+            }
+        });
+
         mRentPriceText = (EditText) findViewById(R.id.rentPriceText);
         mPeopleCountText = (EditText) findViewById(R.id.peopleAmountText);
 
@@ -39,31 +47,44 @@ public class MainActivity extends ActionBarActivity {
         mPeopleUpBtn = (Button) findViewById(R.id.peopleUpBtn);
         mPeopleDownBtn = (Button) findViewById(R.id.peopleDownBtn);
 
+
         mRentUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                if (mRentPriceText.getText().toString().equals("")){
+                    mRentPriceText.setText("0");
+                } else {
+                    rentPrice = Integer.parseInt(mRentPriceText.getText().toString());
+                    int output = rentPrice + 1;
+                    mRentPriceText.setText(String.valueOf(output));//Convert out to string
+                }
             }
         });
 
         mRentDownBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                rentPrice = Integer.parseInt(mRentPriceText.getText().toString());
+                int output = rentPrice-1;
+                mRentPriceText.setText(String.valueOf(output));//Convert out to string
             }
         });
 
         mPeopleUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                peopleCount = Integer.parseInt(mPeopleCountText.getText().toString());
+                int output = peopleCount+1;
+                mPeopleCountText.setText(String.valueOf(output));//Convert out to string
             }
         });
 
         mPeopleDownBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                peopleCount = Integer.parseInt(mPeopleCountText.getText().toString());
+                int output = peopleCount-1;
+                mPeopleCountText.setText(String.valueOf(output));//Convert out to string
             }
         });
     }
