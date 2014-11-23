@@ -2,21 +2,22 @@ package com.mattieapps.roommates;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 
 public class MainActivity extends BaseActivity {
 
     EditText mRentPriceText, mPeopleCountText;
     Button mRentUpBtn, mRentDownBtn, mPeopleUpBtn, mPeopleDownBtn;
+    ImageButton mSwitchFab, mEqualFab;
 
     int rentPrice = 0;
     int peopleCount = 0;
@@ -26,20 +27,21 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatingActionButton fabButton = new FloatingActionButton.Builder(this)
-                .withDrawable(getResources().getDrawable(R.drawable.ic_flip))
-                .withButtonColor(Color.WHITE)
-                .withGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL)
-                .withMargins(0, 0, 0, 16)
-                .create();
+        mSwitchFab = (ImageButton) findViewById(R.id.fabButton);
+        mEqualFab = (ImageButton) findViewById(R.id.calculateFabButton);
 
-        fabButton.setOnClickListener(new View.OnClickListener() {
+        mSwitchFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TipCalActivity.class);
                 startActivity(intent);
             }
         });
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            mSwitchFab.setBackground(getDrawable(R.drawable.circle_21));
+            mEqualFab.setBackground(getDrawable(R.drawable.circle_21));
+        }
 
         mRentPriceText = (EditText) findViewById(R.id.rentPriceText);
         mPeopleCountText = (EditText) findViewById(R.id.peopleAmountText);

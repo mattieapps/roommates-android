@@ -114,4 +114,36 @@
         android:layout_alignParentEnd="true"
         android:layout_above="@+id/textView3" />
 
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/calculateFabButton"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_equal"
+        android:contentDescription="fab"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/outputTextView"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+
+        android:stateListAnimator="@drawable/fab_light"
+        android:elevation="2dp"/>
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/fabButton"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_alignBottom="@+id/rentDownBtn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_flip"
+        android:contentDescription="fab"
+        android:layout_marginBottom="@dimen/fab_margin"
+
+        android:stateListAnimator="@drawable/fab_light"
+        android:elevation="2dp"/>
+
 </RelativeLayout>

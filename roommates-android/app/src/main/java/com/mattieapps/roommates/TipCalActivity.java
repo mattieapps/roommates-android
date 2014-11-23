@@ -1,11 +1,11 @@
 package com.mattieapps.roommates;
 
 import android.content.Intent;
-import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
@@ -16,26 +16,26 @@ import com.afollestad.materialdialogs.Theme;
 public class TipCalActivity extends BaseActivity {
 
     Button mPickGratuityBtn;
+    ImageButton mSwitchFab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
 
-        FloatingActionButton fabButton = new FloatingActionButton.Builder(this)
-                .withDrawable(getResources().getDrawable(R.drawable.ic_flip))
-                .withButtonColor(Color.LTGRAY)
-                .withGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL)
-                .withMargins(0, 0, 0, 16)
-                .create();
+        mSwitchFab = (ImageButton) findViewById(R.id.tipsFabButton);
 
-        fabButton.setOnClickListener(new View.OnClickListener() {
+        mSwitchFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TipCalActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            mSwitchFab.setBackground(getDrawable(R.drawable.circle_21));
+        }
 
         mPickGratuityBtn = (Button) findViewById(R.id.pickGratuityBtn);
         mPickGratuityBtn.setOnClickListener(new View.OnClickListener() {

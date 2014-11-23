@@ -74,4 +74,19 @@
         android:layout_below="@+id/gratuityEditText"
         android:layout_alignLeft="@+id/gratuityEditText"
         android:layout_alignStart="@+id/gratuityEditText" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/tipsFabButton"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_flip"
+        android:contentDescription="fab"
+        android:layout_marginBottom="@dimen/fab_margin"
+
+        android:stateListAnimator="@drawable/fab_light"
+        android:elevation="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
