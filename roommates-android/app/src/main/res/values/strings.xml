@@ -6,5 +6,15 @@
     <string name="action_settings">Settings</string>
     <string name="up">Up</string>
     <string name="down">Down</string>
+    <string name="priceOfRent">Price of Rent:</string>
+    <string name="numbOfPeople">Number of People in Household:</string>
+    <string name="numbOfPeopleHint"># of People</string>
+    <string name="zero">0</string>
+    <string name="rentController">Rent Controller</string>
+    <string name="peopleControler">People # Controller</string>
+    <string name="output">Output:</string>
+    <string name="fab">fab</string>
+    <string name="rent">Rent</string>
+    <string name="clear">Clear</string>
 
 </resources>

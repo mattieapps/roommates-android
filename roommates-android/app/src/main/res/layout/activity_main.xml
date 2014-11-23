@@ -11,10 +11,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Price of Rent:"
+        android:text="@string/priceOfRent"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         />
 
@@ -26,18 +27,21 @@
         android:id="@+id/rentPriceText"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
-        android:hint="Rent"
-        android:text="0" />
+        android:layout_alignParentRight="true"
+        android:hint="@string/rent"
+        android:text="@string/zero" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Number of People in Household:"
+        android:text="@string/numbOfPeople"
         android:id="@+id/textView2"
         android:layout_below="@+id/rentPriceText"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,11 +49,14 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/peopleAmountText"
-        android:hint="# of People"
+        android:hint="@string/numbOfPeopleHint"
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignEnd="@+id/rentPriceText"
-        android:text="0" />
+        android:layout_alignRight="@+id/rentPriceText"
+        android:layout_alignParentRight="true"
+        android:text="@string/zero" />
 
     <Button
         android:layout_width="wrap_content"
@@ -57,7 +64,8 @@
         android:text="@string/down"
         android:id="@+id/rentDownBtn"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -65,7 +73,8 @@
         android:text="@string/up"
         android:id="@+id/rentUpBtn"
         android:layout_above="@+id/rentDownBtn"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -73,7 +82,8 @@
         android:text="@string/down"
         android:id="@+id/peopleDownBtn"
         android:layout_alignTop="@+id/rentDownBtn"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -81,31 +91,34 @@
         android:text="@string/up"
         android:id="@+id/peopleUpBtn"
         android:layout_alignBottom="@+id/rentUpBtn"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Rent Controller"
+        android:text="@string/rentController"
         android:id="@+id/textView3"
         android:layout_above="@+id/rentUpBtn"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="People # Controller"
+        android:text="@string/peopleControler"
         android:id="@+id/textView4"
         android:layout_above="@+id/peopleUpBtn"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Output:"
+        android:text="@string/output"
         android:id="@+id/outputTextView"
         android:layout_below="@+id/peopleAmountText"
         android:layout_alignParentLeft="true"
@@ -120,7 +133,7 @@
         android:id="@+id/calculateFabButton"
         android:background="@drawable/circle"
         android:src="@drawable/ic_equal"
-        android:contentDescription="fab"
+        android:contentDescription="@string/fab"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/outputTextView"
@@ -140,7 +153,7 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/circle"
         android:src="@drawable/ic_flip"
-        android:contentDescription="fab"
+        android:contentDescription="@string/fab"
         android:layout_marginBottom="@dimen/fab_margin"
 
         android:stateListAnimator="@drawable/fab_light"
