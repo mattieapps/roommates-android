@@ -1,14 +1,11 @@
 package com.mattieapps.roommates;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -17,8 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends BaseActivity {
 
     EditText mRentPriceEditText, mPeopleCountEditText;
-    Button mRentUpBtn, mRentDownBtn, mPeopleUpBtn, mPeopleDownBtn;
-    ImageButton mSwitchFab, mEqualFab;
+    ImageButton mSwitchFab, mEqualFab, mRentUpBtn, mRentDownBtn, mPeopleUpBtn, mPeopleDownBtn;
     TextView mOutputText;
 
     int rentPrice = 0;
@@ -49,10 +45,10 @@ public class MainActivity extends BaseActivity {
         mRentPriceEditText = (EditText) findViewById(R.id.rentPriceText);
         mPeopleCountEditText = (EditText) findViewById(R.id.peopleAmountText);
 
-        mRentUpBtn = (Button) findViewById(R.id.rentUpBtn);
-        mRentDownBtn = (Button) findViewById(R.id.rentDownBtn);
-        mPeopleUpBtn = (Button) findViewById(R.id.peopleUpBtn);
-        mPeopleDownBtn = (Button) findViewById(R.id.peopleDownBtn);
+        mRentUpBtn = (ImageButton) findViewById(R.id.rentUpBtn);
+        mRentDownBtn = (ImageButton) findViewById(R.id.rentDownBtn);
+        mPeopleUpBtn = (ImageButton) findViewById(R.id.peopleUpBtn);
+        mPeopleDownBtn = (ImageButton) findViewById(R.id.peopleDownBtn);
 
 
         mRentUpBtn.setOnClickListener(new View.OnClickListener() {
@@ -105,8 +101,6 @@ public class MainActivity extends BaseActivity {
                 mOutputText.setText("Output:\n\n" + output);
             }
         });
-
-        closeKeyboard();
     }
 
 
@@ -132,15 +126,9 @@ public class MainActivity extends BaseActivity {
         if (id == R.id.action_reset){
             mRentPriceEditText.setText("0");
             mPeopleCountEditText.setText("0");
+            mOutputText.setText("Output:");
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void closeKeyboard(){
-        InputMethodManager imm = (InputMethodManager)getSystemService(
-                Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(mRentPriceEditText.getWindowToken(), 0);
-        imm.hideSoftInputFromWindow(mPeopleCountEditText.getWindowToken(), 0);
     }
 }

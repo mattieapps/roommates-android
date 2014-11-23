@@ -58,37 +58,37 @@
         android:layout_alignParentRight="true"
         android:text="@string/zero" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/down"
+        android:src="@drawable/ic_down"
         android:id="@+id/rentDownBtn"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/up"
+        android:src="@drawable/ic_up"
         android:id="@+id/rentUpBtn"
         android:layout_above="@+id/rentDownBtn"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/down"
+        android:src="@drawable/ic_down"
         android:id="@+id/peopleDownBtn"
         android:layout_alignTop="@+id/rentDownBtn"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"/>
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/up"
+        android:src="@drawable/ic_up"
         android:id="@+id/peopleUpBtn"
         android:layout_alignBottom="@+id/rentUpBtn"
         android:layout_alignParentEnd="true"
