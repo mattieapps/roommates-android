@@ -11,13 +11,15 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class MainActivity extends BaseActivity {
 
-    EditText mRentPriceText, mPeopleCountText;
+    EditText mRentPriceEditText, mPeopleCountEditText;
     Button mRentUpBtn, mRentDownBtn, mPeopleUpBtn, mPeopleDownBtn;
     ImageButton mSwitchFab, mEqualFab;
+    TextView mOutputText;
 
     int rentPrice = 0;
     int peopleCount = 0;
@@ -29,6 +31,7 @@ public class MainActivity extends BaseActivity {
 
         mSwitchFab = (ImageButton) findViewById(R.id.fabButton);
         mEqualFab = (ImageButton) findViewById(R.id.calculateFabButton);
+        mOutputText = (TextView) findViewById(R.id.outputTextView);
 
         mSwitchFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,8 +46,8 @@ public class MainActivity extends BaseActivity {
             mEqualFab.setBackground(getDrawable(R.drawable.circle_21));
         }
 
-        mRentPriceText = (EditText) findViewById(R.id.rentPriceText);
-        mPeopleCountText = (EditText) findViewById(R.id.peopleAmountText);
+        mRentPriceEditText = (EditText) findViewById(R.id.rentPriceText);
+        mPeopleCountEditText = (EditText) findViewById(R.id.peopleAmountText);
 
         mRentUpBtn = (Button) findViewById(R.id.rentUpBtn);
         mRentDownBtn = (Button) findViewById(R.id.rentDownBtn);
@@ -55,12 +58,12 @@ public class MainActivity extends BaseActivity {
         mRentUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mRentPriceText.getText().toString().equals("")){
-                    mRentPriceText.setText("0");
+                if (mRentPriceEditText.getText().toString().equals("")){
+                    mRentPriceEditText.setText("0");
                 } else {
-                    rentPrice = Integer.parseInt(mRentPriceText.getText().toString());
+                    rentPrice = Integer.parseInt(mRentPriceEditText.getText().toString());
                     int output = rentPrice + 1;
-                    mRentPriceText.setText(String.valueOf(output));//Convert out to string
+                    mRentPriceEditText.setText(String.valueOf(output));//Convert out to string
                 }
             }
         });
@@ -68,27 +71,38 @@ public class MainActivity extends BaseActivity {
         mRentDownBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rentPrice = Integer.parseInt(mRentPriceText.getText().toString());
+                rentPrice = Integer.parseInt(mRentPriceEditText.getText().toString());
                 int output = rentPrice-1;
-                mRentPriceText.setText(String.valueOf(output));//Convert out to string
+                mRentPriceEditText.setText(String.valueOf(output));//Convert out to string
             }
         });
 
         mPeopleUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                peopleCount = Integer.parseInt(mPeopleCountText.getText().toString());
+                peopleCount = Integer.parseInt(mPeopleCountEditText.getText().toString());
                 int output = peopleCount+1;
-                mPeopleCountText.setText(String.valueOf(output));//Convert out to string
+                mPeopleCountEditText.setText(String.valueOf(output));//Convert out to string
             }
         });
 
         mPeopleDownBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                peopleCount = Integer.parseInt(mPeopleCountText.getText().toString());
+                peopleCount = Integer.parseInt(mPeopleCountEditText.getText().toString());
                 int output = peopleCount-1;
-                mPeopleCountText.setText(String.valueOf(output));//Convert out to string
+                mPeopleCountEditText.setText(String.valueOf(output));//Convert out to string
+            }
+        });
+
+        mEqualFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rentPrice = Integer.parseInt(mRentPriceEditText.getText().toString());
+                peopleCount = Integer.parseInt(mPeopleCountEditText.getText().toString());
+
+                int output = rentPrice / peopleCount;
+                mOutputText.setText("Output:\n\n" + output);
             }
         });
 
@@ -114,6 +128,11 @@ public class MainActivity extends BaseActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_reset){
+            mRentPriceEditText.setText("0");
+            mPeopleCountEditText.setText("0");
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -121,7 +140,7 @@ public class MainActivity extends BaseActivity {
     private void closeKeyboard(){
         InputMethodManager imm = (InputMethodManager)getSystemService(
                 Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(mRentPriceText.getWindowToken(), 0);
-        imm.hideSoftInputFromWindow(mPeopleCountText.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(mRentPriceEditText.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(mPeopleCountEditText.getWindowToken(), 0);
     }
 }
