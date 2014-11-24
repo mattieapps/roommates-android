@@ -73,7 +73,8 @@
         android:id="@+id/pickGratuityBtn"
         android:layout_below="@+id/gratuityEditText"
         android:layout_alignLeft="@+id/gratuityEditText"
-        android:layout_alignStart="@+id/gratuityEditText" />
+        android:layout_alignStart="@+id/gratuityEditText"
+        android:enabled="false"/>
 
     <ImageButton
         android:layout_width="56dp"
@@ -109,10 +110,12 @@
         android:background="@drawable/circle"
         android:src="@drawable/ic_equal"
         android:contentDescription="@string/fab"
-        android:stateListAnimator="@drawable/fab_light"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:elevation="2dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/outputTipsTextView"
-        android:layout_alignRight="@+id/outputTipsTextView"
-        android:layout_alignEnd="@+id/outputTipsTextView" />
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+
+        android:stateListAnimator="@drawable/fab_light"
+        android:elevation="2dp"/>
 </RelativeLayout>

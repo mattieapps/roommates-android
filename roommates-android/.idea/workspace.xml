@@ -62,11 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TipCalActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TipCalActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mattieapps/roommates/TipCalActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46746987" vertical-offset="436" max-vertical-offset="1065">
-              <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1065">
+              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
               <folding>
                 <element signature="e#1558#1990#0" expanded="true" />
                 <element signature="e#1979#1980#0" expanded="true" />
@@ -75,37 +75,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="450">
-              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2670">
-              <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.8888888" vertical-offset="1830" max-vertical-offset="2670">
+              <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_tips.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="activity_tips.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tips.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.074074" vertical-offset="880" max-vertical-offset="1845">
-              <caret line="75" column="58" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.72" vertical-offset="1455" max-vertical-offset="1890">
+              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding>
-                <element signature="e#4321#4334#0" expanded="true" />
-                <element signature="e#4426#4445#0" expanded="true" />
+                <element signature="e#270#305#0" expanded="true" />
+                <element signature="e#331#366#0" expanded="true" />
+                <element signature="e#390#423#0" expanded="true" />
+                <element signature="e#450#483#0" expanded="true" />
+                <element signature="e#3443#3462#0" expanded="true" />
+                <element signature="e#4352#4365#0" expanded="true" />
+                <element signature="e#4551#4570#0" expanded="true" />
+                <element signature="e#4604#4623#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,6 +116,11 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Dropbox/Android Keystore/mattieappsKeystore.jks" />
+    <option name="KEY_ALIAS" value="mattieappsKeystore" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -1262,9 +1263,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/gratuity_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tips.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mattieapps/roommates/TipCalActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tips.xml" />
       </list>
     </option>
   </component>
@@ -1521,12 +1522,15 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="FA44YWM09826" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21" />
     <property name="android.project.structure.last.selected" value="Project" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="SearchEverywhereHistoryKey" value="And&#9;FILE&#9;file:///Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/src/main/AndroidManifest.xml&#10;activ&#9;FILE&#9;file:///Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/src/main/res/layout/activity_main.xml&#10;gra&#9;FILE&#9;file:///Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/src/main/res/layout/gratuity_dialog.xml&#10;Ti&#9;FILE&#9;file:///Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/src/main/java/com/mattieapps/roommates/TipCalActivity.java&#10;strings&#9;FILE&#9;file:///Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/src/main/res/values/strings.xml&#10;Android&#9;FILE&#9;file:///Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/src/main/AndroidManifest.xml&#10;main&#9;FILE&#9;file:///Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/src/main/res/menu/menu_main.xml" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1701,7 +1705,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1806,8 +1810,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4321#4334#0" expanded="true" />
-            <element signature="e#4426#4445#0" expanded="true" />
+            <element signature="e#270#305#0" expanded="true" />
+            <element signature="e#331#366#0" expanded="true" />
+            <element signature="e#390#423#0" expanded="true" />
+            <element signature="e#450#483#0" expanded="true" />
+            <element signature="e#3443#3462#0" expanded="true" />
+            <element signature="e#4352#4365#0" expanded="true" />
+            <element signature="e#4551#4570#0" expanded="true" />
+            <element signature="e#4604#4623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2131,24 +2141,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2670">
-          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tips.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.074074" vertical-offset="880" max-vertical-offset="1845">
-          <caret line="75" column="58" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
-          <folding>
-            <element signature="e#4321#4334#0" expanded="true" />
-            <element signature="e#4426#4445#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-3.8888888" vertical-offset="1830" max-vertical-offset="2670">
+          <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2157,7 +2153,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="450">
+        <state vertical-scroll-proportion="0.13253012" vertical-offset="35" max-vertical-offset="450">
           <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
           <folding />
         </state>
@@ -2165,13 +2161,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mattieapps/roommates/TipCalActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46746987" vertical-offset="436" max-vertical-offset="1065">
-          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1065">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
           <folding>
             <element signature="e#1558#1990#0" expanded="true" />
             <element signature="e#1979#1980#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tips.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72" vertical-offset="1455" max-vertical-offset="1890">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <element signature="e#270#305#0" expanded="true" />
+            <element signature="e#331#366#0" expanded="true" />
+            <element signature="e#390#423#0" expanded="true" />
+            <element signature="e#450#483#0" expanded="true" />
+            <element signature="e#3443#3462#0" expanded="true" />
+            <element signature="e#4352#4365#0" expanded="true" />
+            <element signature="e#4551#4570#0" expanded="true" />
+            <element signature="e#4604#4623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
