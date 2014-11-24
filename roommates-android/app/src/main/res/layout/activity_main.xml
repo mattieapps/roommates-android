@@ -29,7 +29,9 @@
         android:text="@string/zero"
         android:layout_below="@+id/textView"
         android:layout_toRightOf="@+id/textView8"
-        android:layout_toEndOf="@+id/textView8" />
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_alignRight="@+id/outputTextView"
+        android:layout_alignEnd="@+id/outputTextView" />
 
     <TextView
         android:layout_width="wrap_content"
