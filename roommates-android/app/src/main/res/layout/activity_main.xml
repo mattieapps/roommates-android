@@ -27,9 +27,11 @@
         android:id="@+id/rentPriceText"
         android:hint="@string/rent"
         android:text="@string/zero"
-        android:layout_below="@+id/textView"
         android:layout_toRightOf="@+id/textView8"
-        android:layout_toEndOf="@+id/textView8" />
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -5,7 +5,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
@@ -16,7 +18,9 @@ import com.afollestad.materialdialogs.Theme;
 public class TipCalActivity extends BaseActivity {
 
     Button mPickGratuityBtn;
-    ImageButton mSwitchFab;
+    ImageButton mSwitchFab, mTipsCalFab;
+    TextView mOutputTipsText;
+    EditText mGratuityEditText, mCheckPriceEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,15 @@ public class TipCalActivity extends BaseActivity {
         setContentView(R.layout.activity_tips);
 
         mSwitchFab = (ImageButton) findViewById(R.id.tipsFabButton);
+        mTipsCalFab = (ImageButton) findViewById(R.id.tipsCalFabButton);
+
+        mCheckPriceEditText = (EditText) findViewById(R.id.priceEditText);
+        mGratuityEditText = (EditText) findViewById(R.id.gratuityEditText);
+
+        mOutputTipsText = (TextView) findViewById(R.id.outputTipsTextView);
+
+        mPickGratuityBtn = (Button) findViewById(R.id.pickGratuityBtn);
+
 
         mSwitchFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,11 +46,22 @@ public class TipCalActivity extends BaseActivity {
             }
         });
 
+        mTipsCalFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int price = Integer.parseInt(mCheckPriceEditText.getText().toString());
+                int gratuity = Integer.parseInt(mGratuityEditText.getText().toString());
+                int output = price * gratuity/100;
+
+                mOutputTipsText.setText("Tip Amount:\n\n" + Integer.toString(output));
+            }
+        });
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             mSwitchFab.setBackground(getDrawable(R.drawable.circle_21));
+            mTipsCalFab.setBackground(getDrawable(R.drawable.circle_21));
         }
 
-        mPickGratuityBtn = (Button) findViewById(R.id.pickGratuityBtn);
         mPickGratuityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

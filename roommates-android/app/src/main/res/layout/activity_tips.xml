@@ -88,4 +88,31 @@
 
         android:stateListAnimator="@drawable/fab_light"
         android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tip Amount:"
+        android:id="@+id/outputTipsTextView"
+        android:layout_below="@+id/pickGratuityBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tipsFabButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/tipsCalFabButton"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_equal"
+        android:contentDescription="@string/fab"
+        android:stateListAnimator="@drawable/fab_light"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:elevation="2dp"
+        android:layout_alignTop="@+id/outputTipsTextView"
+        android:layout_alignRight="@+id/outputTipsTextView"
+        android:layout_alignEnd="@+id/outputTipsTextView" />
 </RelativeLayout>
