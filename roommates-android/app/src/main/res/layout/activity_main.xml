@@ -1,172 +1,62 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/priceOfRent"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        />
+    <!-- Your normal content view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/rentPriceText"
-        android:hint="@string/rent"
-        android:text="@string/zero"
-        android:layout_toRightOf="@+id/textView8"
-        android:layout_toEndOf="@+id/textView8"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        <!-- We use a Toolbar so that our drawer can be displayed
+             in front of the action bar -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/numbOfPeople"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/rentPriceText"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true" />
+        <!-- The rest of your content view -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/peopleAmountText"
-        android:hint="@string/numbOfPeopleHint"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignEnd="@+id/rentPriceText"
-        android:layout_alignRight="@+id/rentPriceText"
-        android:layout_alignParentRight="true"
-        android:text="@string/zero" />
+    </LinearLayout>
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_down"
-        android:id="@+id/rentDownBtn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true" />
+    <!-- Your drawer view. This can be any view, LinearLayout
+         is just an example. As we have set fitSystemWindows=true
+         this will be displayed under the status bar. -->
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_up"
-        android:id="@+id/rentUpBtn"
-        android:layout_above="@+id/rentDownBtn"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true" />
+    <!-- Refer to material design guidelines for adding items to nav drawer
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_down"
-        android:id="@+id/peopleDownBtn"
-        android:layout_alignTop="@+id/rentDownBtn"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+         http://www.google.com/design/spec/patterns/navigation-drawer.html
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_up"
-        android:id="@+id/peopleUpBtn"
-        android:layout_alignBottom="@+id/rentUpBtn"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
+    -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/rentController"
-        android:id="@+id/textView3"
-        android:layout_above="@+id/rentUpBtn"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="left|start"
+        android:fitsSystemWindows="true"
+        android:background="#ffffff"
+        android:id="@+id/left_drawer_layout">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/peopleController"
-        android:id="@+id/textView4"
-        android:layout_above="@+id/peopleUpBtn"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
+        <ListView
+            android:id="@+id/left_drawer"
+            android:choiceMode="singleChoice"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/output"
-        android:id="@+id/outputTextView"
-        android:layout_below="@+id/peopleAmountText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/textView3" />
+    </LinearLayout>
 
-    <ImageButton
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:id="@+id/calculateFabButton"
-        android:background="@drawable/circle"
-        android:src="@drawable/ic_equal"
-        android:contentDescription="@string/fab"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/outputTextView"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:layout_marginEnd="@dimen/fab_margin"
-
-        android:stateListAnimator="@drawable/fab_light"
-        android:elevation="2dp"/>
-
-    <ImageButton
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:id="@+id/fabButton"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_alignBottom="@+id/rentDownBtn"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/circle"
-        android:src="@drawable/ic_flip"
-        android:contentDescription="@string/fab"
-        android:layout_marginBottom="@dimen/fab_margin"
-
-        android:stateListAnimator="@drawable/fab_light"
-        android:elevation="2dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/moneysymbol_usd"
-        android:id="@+id/textView8"
-        android:layout_alignBottom="@+id/rentPriceText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-</RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

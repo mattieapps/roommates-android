@@ -1,9 +1,11 @@
 package com.mattieapps.roommates;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -13,38 +15,27 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
 
 /**
- * Created by andrewmattie on 11/19/14.
+ * Created by andrewmattie on 11/28/14.
  */
-public class TipCalActivity extends BaseActivity {
+public class TipCalFragment extends Fragment {
 
     Button mPickGratuityBtn;
-    ImageButton mSwitchFab, mTipsCalFab;
+    ImageButton mTipsCalFab;
     TextView mOutputTipsText;
     EditText mGratuityEditText, mCheckPriceEditText;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tips);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_tipcal, container, false);
 
-        mSwitchFab = (ImageButton) findViewById(R.id.tipsFabButton);
-        mTipsCalFab = (ImageButton) findViewById(R.id.tipsCalFabButton);
+        mTipsCalFab = (ImageButton) view.findViewById(R.id.tipsCalFabButton);
 
-        mCheckPriceEditText = (EditText) findViewById(R.id.priceEditText);
-        mGratuityEditText = (EditText) findViewById(R.id.gratuityEditText);
+        mCheckPriceEditText = (EditText) view.findViewById(R.id.priceEditText);
+        mGratuityEditText = (EditText) view.findViewById(R.id.gratuityEditText);
 
-        mOutputTipsText = (TextView) findViewById(R.id.outputTipsTextView);
+        mOutputTipsText = (TextView) view.findViewById(R.id.outputTipsTextView);
 
-        mPickGratuityBtn = (Button) findViewById(R.id.pickGratuityBtn);
-
-
-        mSwitchFab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TipCalActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        mPickGratuityBtn = (Button) view.findViewById(R.id.pickGratuityBtn);
 
         mTipsCalFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,8 +49,7 @@ public class TipCalActivity extends BaseActivity {
         });
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-            mSwitchFab.setBackground(getDrawable(R.drawable.circle_21));
-            mTipsCalFab.setBackground(getDrawable(R.drawable.circle_21));
+            //mTipsCalFab.setBackground(getDrawable(R.drawable.circle_21));
         }
 
         mPickGratuityBtn.setOnClickListener(new View.OnClickListener() {
@@ -68,12 +58,14 @@ public class TipCalActivity extends BaseActivity {
                 gratuityDialog();
             }
         });
+
+        return view;
     }
 
     private void gratuityDialog() {
-        new MaterialDialog.Builder(this)
+        new MaterialDialog.Builder(getActivity())
                 .title("Gratuity amount")
-                .customView(R.layout.gratuity_dialog)
+                .customView(R.layout.dialog_gratuity)
                 .theme(Theme.LIGHT)  // the default is light, so you don't need this line
                 .positiveText("Set")  // the default for textual dialogs (not list or custom view dialogs) is 'OK'
                 .negativeText("Cancel")  // leaving this line out will remove the negative button

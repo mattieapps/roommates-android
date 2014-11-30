@@ -4,6 +4,10 @@
     <string name="app_name">RoomMates</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
     <string name="up">Up</string>
     <string name="down">Down</string>
     <string name="priceOfRent">Price of Rent:</string>

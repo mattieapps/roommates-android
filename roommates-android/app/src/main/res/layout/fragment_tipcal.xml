@@ -76,20 +76,6 @@
         android:layout_alignStart="@+id/gratuityEditText"
         android:enabled="false"/>
 
-    <ImageButton
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:id="@+id/tipsFabButton"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/circle"
-        android:src="@drawable/ic_flip"
-        android:contentDescription="fab"
-        android:layout_marginBottom="@dimen/fab_margin"
-
-        android:stateListAnimator="@drawable/fab_light"
-        android:elevation="2dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
