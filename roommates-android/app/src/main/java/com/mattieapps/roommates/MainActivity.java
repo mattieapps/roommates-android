@@ -71,7 +71,7 @@ public class MainActivity extends ActionBarActivity {
 
         mTitle = getResources().getString(R.string.app_name);
 
-        mItemTitles = getResources().getStringArray(R.array.nav_drawer_items);
+        mItemTitles = nav_drawer_items;
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         mDrawerListLayout = (LinearLayout) findViewById(R.id.left_drawer_layout);
