@@ -26,6 +26,12 @@
         revision="21.1.1"
         sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
     <item
+        dex="/Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/build/intermediates/pre-dexed/debug/classes-5540f1a7a878eb8bcff58e7b5defe335ddb6336e.jar"
+        jar="/Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.3.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="4523a57658d80bf5ad025858f1730d435e5699b4"/>
+    <item
         dex="/Users/andrewmattie/Documents/AndroidStudioProjects/NavDrawer/app/build/intermediates/pre-dexed/debug/classes-6740de0207cfdd1df7321c7efaebbaad434e085e.jar"
         jar="/Users/andrewmattie/Documents/AndroidStudioProjects/NavDrawer/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
         jumboMode="false"

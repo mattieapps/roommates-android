@@ -29,7 +29,6 @@ public class MainActivity extends ActionBarActivity {
 
     private RentCalFragment homeFragment;
     private TipCalFragment aboutFragment;
-    private UserFragment userFragment;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
@@ -46,18 +45,17 @@ public class MainActivity extends ActionBarActivity {
         nav_drawer_items = new String[] {
                 "Rent Calculator",
                 "Tip Calculator",
-                "Settings"
+               // "Settings"
         };
 
         nav_drawer_icons = new int[] {
                 R.drawable.ic_home,
                 R.drawable.ic_info,
-                R.drawable.ic_user
+               // R.drawable.ic_user
         };
 
         homeFragment = new RentCalFragment();
         aboutFragment = new TipCalFragment();
-        userFragment = new UserFragment();
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
@@ -178,8 +176,7 @@ public class MainActivity extends ActionBarActivity {
                     fragmentTransaction.commit();
                     break;
                 case 2:
-                    fragmentTransaction.replace(R.id.content_frame, userFragment);
-                    fragmentTransaction.commit();
+                    //TODO: Settings intent
                     break;
 
                 default: position = 0;
