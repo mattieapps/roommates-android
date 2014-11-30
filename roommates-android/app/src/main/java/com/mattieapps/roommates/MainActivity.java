@@ -50,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
 
         nav_drawer_icons = new int[] {
                 R.drawable.ic_home,
-                R.drawable.ic_info,
+                R.drawable.ic_calculator,
                // R.drawable.ic_user
         };
 
