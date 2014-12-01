@@ -21,6 +21,7 @@
         android:text="List Item"
         android:background="#ffffff"
         android:textSize="14sp"
+        android:textStyle="bold"
 
 
         android:id="@+id/drawerItemTextView"

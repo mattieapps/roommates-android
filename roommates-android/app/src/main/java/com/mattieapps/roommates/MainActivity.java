@@ -12,9 +12,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -36,6 +38,8 @@ public class MainActivity extends ActionBarActivity {
     private int[] nav_drawer_icons = null;
 
     private RelativeLayout drawer_list_item;
+
+    int isFragmentNumber = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +142,31 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
         // Handle your other action bar items...
+        int id = item.getItemId();
+        if (isFragmentNumber == 0) {
+            //noinspection SimplifiableIfStatement
+            if (id == R.id.action_reset) {
+                EditText rentprice = (EditText) findViewById(R.id.rentPriceText);
+                EditText numbpeople = (EditText) findViewById(R.id.peopleAmountText);
+                TextView output = (TextView) findViewById(R.id.outputTextView);
+
+                rentprice.setText("");
+                numbpeople.setText("");
+                output.setText("");
+            }
+        }
+        else if (isFragmentNumber == 1) {
+            //noinspection SimplifiableIfStatement
+            if (id == R.id.action_reset) {
+                EditText price = (EditText) findViewById(R.id.priceEditText);
+                EditText gratuity = (EditText) findViewById(R.id.gratuityEditText);
+                TextView output = (TextView) findViewById(R.id.outputTipsTextView);
+
+                price.setText("");
+                gratuity.setText("");
+                output.setText("");
+            }
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -170,10 +199,14 @@ public class MainActivity extends ActionBarActivity {
                 case 0:
                     fragmentTransaction.replace(R.id.content_frame, homeFragment);
                     fragmentTransaction.commit();
+
+                    isFragmentNumber = 0;
                     break;
                 case 1:
                     fragmentTransaction.replace(R.id.content_frame, aboutFragment);
                     fragmentTransaction.commit();
+
+                    isFragmentNumber = 1;
                     break;
                 case 2:
                     //TODO: Settings intent

@@ -2,13 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
-    <!--<item android:id="@+id/action_settings"-->
-        <!--android:title="@string/action_settings"-->
-        <!--android:orderInCategory="100"-->
-        <!--app:showAsAction="never" />-->
-    <!--<item android:id="@+id/action_reset"-->
-        <!--android:orderInCategory="0"-->
-        <!--android:title="@string/clear"-->
-        <!--android:icon="@drawable/ic_clear"-->
-        <!--app:showAsAction="always" />-->
+    <item android:id="@+id/action_reset"
+        android:orderInCategory="0"
+        android:title="@string/clear"
+        android:icon="@drawable/ic_clear"
+        app:showAsAction="always" />
 </menu>
