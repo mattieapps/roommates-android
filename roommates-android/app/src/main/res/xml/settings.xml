@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<PreferenceCategory android:title="Phone Numbers">-->
+        <!--<EditTextPreference android:title="Select contacts to send alert to..."-->
+            <!--android:key="contactsToAlertPref"-->
+            <!--android:summary="Separate each phone number with a comma"/>-->
+    <!--</PreferenceCategory>-->
+
+    <ListPreference
+        android:title="Default Home Screen"
+        android:key="customHomeScreen"
+        android:defaultValue="Rent"
+        android:entries="@array/default_home_setting"
+        android:entryValues="@array/default_home_setting"
+        android:summary="Set the first screen to load"/>
+
+    <ListPreference
+        android:title="App Color"
+        android:key="customAppColor"
+        android:defaultValue="Black"
+        android:entries="@array/app_colors"
+        android:entryValues="@array/app_colors"
+        android:summary="Custom Colors for RoomMates" />
+</PreferenceScreen>

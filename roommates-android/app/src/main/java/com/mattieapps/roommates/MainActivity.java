@@ -1,11 +1,13 @@
 package com.mattieapps.roommates;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -18,8 +20,10 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.nispok.snackbar.Snackbar;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends BaseActivity {
 
     private String[] mItemTitles;
     private DrawerLayout mDrawerLayout;
@@ -29,13 +33,13 @@ public class MainActivity extends ActionBarActivity {
     private ActionBarDrawerToggle mDrawerToggle;
     private Toolbar mToolbar;
 
-    private RentCalFragment homeFragment;
-    private TipCalFragment aboutFragment;
+    private RentCalFragment rentCalFragment;
+    private TipCalFragment tipCalFragment;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
-    private String[] nav_drawer_items = null;
-    private int[] nav_drawer_icons = null;
+    private String[] nav_drawer_items;
+    private int[] nav_drawer_icons;
 
     private RelativeLayout drawer_list_item;
 
@@ -49,22 +53,34 @@ public class MainActivity extends ActionBarActivity {
         nav_drawer_items = new String[] {
                 "Rent Calculator",
                 "Tip Calculator",
-               // "Settings"
+                "Settings"
         };
 
         nav_drawer_icons = new int[] {
                 R.drawable.ic_home,
                 R.drawable.ic_calculator,
-               // R.drawable.ic_user
+                R.drawable.ic_action_settings
         };
 
-        homeFragment = new RentCalFragment();
-        aboutFragment = new TipCalFragment();
+        rentCalFragment = new RentCalFragment();
+        tipCalFragment = new TipCalFragment();
 
-        fragmentManager = getSupportFragmentManager();
-        fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.content_frame, homeFragment);
-        fragmentTransaction.commit();
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        String startFragment = preferences.getString("customHomeScreen", "Rent");
+
+        if (startFragment.equals("Rent")) {
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_frame, rentCalFragment);
+            fragmentTransaction.commit();
+        }
+
+        if (startFragment.equals("Tip")) {
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_frame, tipCalFragment);
+            fragmentTransaction.commit();
+        }
 
         //Begin Main Nav Drawer Code
 
@@ -146,13 +162,18 @@ public class MainActivity extends ActionBarActivity {
         if (isFragmentNumber == 0) {
             //noinspection SimplifiableIfStatement
             if (id == R.id.action_reset) {
+
                 EditText rentprice = (EditText) findViewById(R.id.rentPriceText);
                 EditText numbpeople = (EditText) findViewById(R.id.peopleAmountText);
                 TextView output = (TextView) findViewById(R.id.outputTextView);
 
-                rentprice.setText("");
-                numbpeople.setText("");
-                output.setText("");
+                Snackbar.with(getApplicationContext()) // context
+                        .text("Rent calculations cleared") // text to display
+                        .show(this); // activity where it is displayed
+
+                rentprice.setText("0");
+                numbpeople.setText("0");
+                output.setText("Output:");
             }
         }
         else if (isFragmentNumber == 1) {
@@ -162,9 +183,13 @@ public class MainActivity extends ActionBarActivity {
                 EditText gratuity = (EditText) findViewById(R.id.gratuityEditText);
                 TextView output = (TextView) findViewById(R.id.outputTipsTextView);
 
-                price.setText("");
-                gratuity.setText("");
-                output.setText("");
+                price.setText("0");
+                gratuity.setText("0");
+                output.setText("Output:");
+
+                Snackbar.with(getApplicationContext()) // context
+                        .text("Tip calculations cleared")
+                        .show(this); // activity where it is displayed
             }
         }
 
@@ -197,19 +222,20 @@ public class MainActivity extends ActionBarActivity {
 
             switch (position){
                 case 0:
-                    fragmentTransaction.replace(R.id.content_frame, homeFragment);
+                    fragmentTransaction.replace(R.id.content_frame, rentCalFragment);
                     fragmentTransaction.commit();
 
                     isFragmentNumber = 0;
                     break;
                 case 1:
-                    fragmentTransaction.replace(R.id.content_frame, aboutFragment);
+                    fragmentTransaction.replace(R.id.content_frame, tipCalFragment);
                     fragmentTransaction.commit();
 
                     isFragmentNumber = 1;
                     break;
                 case 2:
-                    //TODO: Settings intent
+                    Intent intent = new Intent(getApplication(), Settings.class);
+                    startActivity(intent);
                     break;
 
                 default: position = 0;

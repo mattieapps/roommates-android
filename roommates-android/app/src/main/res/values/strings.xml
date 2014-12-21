@@ -22,5 +22,22 @@
     <string name="clear">Clear</string>
 
     <string name="moneysymbol_usd">$</string>
+    
+    <string-array name="default_home_setting">
+        <item>Rent</item>
+        <item>Tip</item>
+    </string-array>
+
+    <string-array name="app_colors">
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Blue[Indigo]</item>
+        <item>Teal</item>
+        <item>Green</item>
+        <item>Amber</item>
+    </string-array>
 
 </resources>

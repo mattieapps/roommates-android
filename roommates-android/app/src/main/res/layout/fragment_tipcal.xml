@@ -66,27 +66,18 @@
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/gratuityEditText" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pick Gratuity"
-        android:id="@+id/pickGratuityBtn"
-        android:layout_below="@+id/gratuityEditText"
-        android:layout_alignLeft="@+id/gratuityEditText"
-        android:layout_alignStart="@+id/gratuityEditText"
-        android:enabled="false"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Tip Amount:"
         android:id="@+id/outputTipsTextView"
-        android:layout_below="@+id/pickGratuityBtn"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/gratuityEditText"
+        android:layout_alignParentBottom="true" />
 
     <ImageButton
         android:layout_width="48dp"
