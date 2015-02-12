@@ -22,6 +22,18 @@
     <string name="clear">Clear</string>
 
     <string name="moneysymbol_usd">$</string>
+
+    <string-array name="currency_symbol">
+        <item>USD</item>
+        <item>Pound</item>
+        <item>Euro</item>
+    </string-array>
+
+    <string-array name="currency_values">
+        <item>$</item>
+        <item>£</item>
+        <item>€</item>
+    </string-array>
     
     <string-array name="default_home_setting">
         <item>Rent</item>
@@ -34,10 +46,26 @@
         <item>Red</item>
         <item>Pink</item>
         <item>Purple</item>
-        <item>Blue[Indigo]</item>
+        <item>Blue</item>
         <item>Teal</item>
         <item>Green</item>
         <item>Amber</item>
     </string-array>
+
+    <color name="accentColor">?attr/colorAccent</color>
+
+    <color name="black_a200">#D3D3D3</color>
+    <color name="white_a200">#D3D3D3</color>
+    <color name="red_a200">#FF5252</color>
+    <color name="pink_a200">#FF4081</color>
+    <color name="purple_a200">#E040FB</color>
+    <color name="blue_a200">#536DFE</color>
+    <color name="teal_a200">#64FFDA</color>
+    <color name="green_a200">#69F0AE</color>
+    <color name="amber_a200">#FFD740</color>
+
+    <!--API KEYS-->
+    <string name="PARSE_APP_ID_POS1">9MqoVY3knFu7OQW6pNLUz1T0mlIiImsqwq9YR7F6</string>
+    <string name="PARSE_CLIENT_KEY_POS2">zzZ5xq5NLL2NlQSoOx8yw9hbpYT58h9EAVy07WiN</string>
 
 </resources>
