@@ -65,7 +65,7 @@
     <color name="amber_a200">#FFD740</color>
 
     <!--API KEYS-->
-    <string name="PARSE_APP_ID_POS1">9MqoVY3knFu7OQW6pNLUz1T0mlIiImsqwq9YR7F6</string>
-    <string name="PARSE_CLIENT_KEY_POS2">zzZ5xq5NLL2NlQSoOx8yw9hbpYT58h9EAVy07WiN</string>
+    <string name="PARSE_APP_ID_POS1">YOUR_API_KEY</string>
+    <string name="PARSE_CLIENT_KEY_POS2">YOUR_CLIENT_KEY</string>
 
 </resources>
