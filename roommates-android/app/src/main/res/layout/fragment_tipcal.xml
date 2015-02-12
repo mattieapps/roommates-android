@@ -66,15 +66,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/gratuityEditText" />
 
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
-        android:layout_gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/gratuityEditText"
-        card_view:cardCornerRadius="4dp">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,8 +79,6 @@
         android:layout_below="@+id/gratuityEditText"
         android:layout_alignParentBottom="true" />
 
-    </android.support.v7.widget.CardView>
-
     <ImageButton
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -97,13 +86,12 @@
         android:background="@drawable/circle"
         android:src="@drawable/ic_equal"
         android:contentDescription="@string/fab"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/outputTipsTextView"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
 
         android:stateListAnimator="@drawable/fab_light"
-        android:elevation="2dp"
-        android:layout_alignTop="@+id/card_view"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginTop="4dp" />
+        android:elevation="2dp"/>
 </RelativeLayout>

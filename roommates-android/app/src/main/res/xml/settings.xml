@@ -22,16 +22,4 @@
         android:entries="@array/app_colors"
         android:entryValues="@array/app_colors"
         android:summary="Custom Colors for RoomMates" />
-
-    <ListPreference
-        android:title="Default Currency"
-        android:key="defaultCurrencyPref"
-        android:defaultValue="USD"
-        android:entries="@array/currency_symbol"
-        android:entryValues="@array/currency_values" />
-    <CheckBoxPreference
-        android:title="Receive App Update Notifications"
-        android:key="receiveNotifications"
-        android:defaultValue="true"
-        android:summary="Enable/Disable App Update Notifications" />
 </PreferenceScreen>
