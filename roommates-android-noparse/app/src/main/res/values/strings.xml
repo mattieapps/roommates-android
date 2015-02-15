@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RoomMates</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="priceOfRent">Price of Rent:</string>
+    <string name="numbOfPeople">Number of People in Household:</string>
+    <string name="numbOfPeopleHint"># of People</string>
+    <string name="zero">0</string>
+    <string name="rentController">Rent Controller</string>
+    <string name="peopleController">People # Controller</string>
+    <string name="output">Output:</string>
+    <string name="fab">fab</string>
+    <string name="rent">Rent</string>
+    <string name="clear">Clear</string>
+
+    <string name="moneysymbol_usd">$</string>
+
+    <string-array name="currency_symbol">
+        <item>USD</item>
+        <item>Pound</item>
+        <item>Euro</item>
+    </string-array>
+
+    <string-array name="currency_values">
+        <item>$</item>
+        <item>£</item>
+        <item>€</item>
+    </string-array>
+    
+    <string-array name="default_home_setting">
+        <item>Rent</item>
+        <item>Tip</item>
+    </string-array>
+
+    <string-array name="app_colors">
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Blue</item>
+        <item>Teal</item>
+        <item>Green</item>
+        <item>Amber</item>
+    </string-array>
+
+    <color name="accentColor">?attr/colorAccent</color>
+
+    <color name="black_a200">#D3D3D3</color>
+    <color name="white_a200">#D3D3D3</color>
+    <color name="red_a200">#FF5252</color>
+    <color name="pink_a200">#FF4081</color>
+    <color name="purple_a200">#E040FB</color>
+    <color name="blue_a200">#536DFE</color>
+    <color name="teal_a200">#64FFDA</color>
+    <color name="green_a200">#69F0AE</color>
+    <color name="amber_a200">#FFD740</color>
+
+</resources>
