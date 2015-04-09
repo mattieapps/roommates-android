@@ -5,7 +5,7 @@ A mobile app for roommates who need to split their bills. iOS and Android
 
 
 
-Open Source libs used(Android)
+Open Source libs used(Android[Required for source to build])
 =================
 MaterialDialogs - https://github.com/afollestad/material-dialogs
 
