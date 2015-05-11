@@ -11,8 +11,6 @@ MaterialDialogs - https://github.com/afollestad/material-dialogs
 
 Snackbar - https://github.com/nispok/snackbar
 
-AppRate - https://github.com/kikoso/AppRate-for-Android
-
 Icons from http://flaticon.com
 
 Want to help? Thats great!
