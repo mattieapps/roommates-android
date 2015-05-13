@@ -16,28 +16,18 @@
     <string name="zero">0</string>
     <string name="rentController">Rent Controller</string>
     <string name="peopleController">People # Controller</string>
-    <string name="output">Output:</string>
+    <string name="output">Amount:</string>
     <string name="fab">fab</string>
     <string name="rent">Rent</string>
     <string name="clear">Clear</string>
 
-    <string name="moneysymbol_usd">$</string>
+    <string name="moneysymbol">$</string>
 
-    <string-array name="currency_symbol">
-        <item>USD</item>
-        <item>Pound</item>
-        <item>Euro</item>
-    </string-array>
-
-    <string-array name="currency_values">
-        <item>$</item>
-        <item>£</item>
-        <item>€</item>
-    </string-array>
-    
     <string-array name="default_home_setting">
+        <item>Expenses</item>
         <item>Rent</item>
         <item>Tip</item>
+        <item>Loan</item>
     </string-array>
 
     <string-array name="app_colors">
@@ -50,22 +40,44 @@
         <item>Teal</item>
         <item>Green</item>
         <item>Amber</item>
+        <item>Blue Grey</item>
+        <item>RoomMates</item>
     </string-array>
 
-    <color name="accentColor">?attr/colorAccent</color>
+    <string-array name="statusArray">
+        <item>I owe</item>
+        <item>They owe</item>
+        <item>Settled</item>
+    </string-array>
 
-    <color name="black_a200">#D3D3D3</color>
-    <color name="white_a200">#D3D3D3</color>
-    <color name="red_a200">#FF5252</color>
-    <color name="pink_a200">#FF4081</color>
-    <color name="purple_a200">#E040FB</color>
-    <color name="blue_a200">#536DFE</color>
-    <color name="teal_a200">#64FFDA</color>
-    <color name="green_a200">#69F0AE</color>
-    <color name="amber_a200">#FFD740</color>
+    <string-array name="alarmArray">
+        <item>None</item>
+        <item>One time</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
 
-    <!--API KEYS-->
-    <string name="PARSE_APP_ID_POS1">YOUR_API_KEY</string>
-    <string name="PARSE_CLIENT_KEY_POS2">YOUR_CLIENT_KEY</string>
+    <string-array name="gratuity_array">
+        <item>14%</item>
+        <item>15%</item>
+        <item>16%</item>
+        <item>17%</item>
+        <item>18%</item>
+        <item>19%</item>
+        <item>20%</item>
+        <item>21%</item>
+        <item>22%</item>
+    </string-array>
 
+    <string name="involvedPartiesEditText">Involved Parties(separate by comas)</string>
+    <string name="expensePriceHint">Expense Price</string>
+    <string name="expenseNameHint">Expense Name</string>
+    <string name="mateNameHint">Mate Name</string>
+    <string name="mateEmailHint">Mate Email</string>
+    <string name="save">Save</string>
+    <string name="Save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="editmate">Edit Mate</string>
 </resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <com.mattieapps.roommates.systems.FloatLabelLayout
+            android:id="@+id/expenseNameFloatLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/expenseNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="@string/expenseNameHint" />
+
+        </com.mattieapps.roommates.systems.FloatLabelLayout>
+
+        <com.mattieapps.roommates.systems.FloatLabelLayout
+            android:id="@+id/expensePriceFloatLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expenseNameFloatLabel">
+
+            <EditText
+                android:id="@+id/expensePriceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/expensePriceHint"
+                android:inputType="numberDecimal" />
+
+        </com.mattieapps.roommates.systems.FloatLabelLayout>
+
+        <com.mattieapps.roommates.systems.FloatLabelLayout
+            android:id="@+id/expensePartiesFloatLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expensePriceFloatLabel">
+
+            <EditText
+                android:id="@+id/expenseInvolvedPartiesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/involvedPartiesEditText"
+                android:inputType="textPersonName" />
+
+        </com.mattieapps.roommates.systems.FloatLabelLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Status"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/expenseStatusSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/reminderFreqText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder Frequency"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/expenseAlarmFreqSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newExpenseSetReminderTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:text="Set Reminder Time &amp; Date(optional)" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <com.mattieapps.roommates.systems.FloatLabelLayout
+            android:id="@+id/nameNameFloatLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/mateNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="@string/mateNameHint"
+                android:inputType="textPersonName" />
+
+        </com.mattieapps.roommates.systems.FloatLabelLayout>
+
+        <com.mattieapps.roommates.systems.FloatLabelLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameNameFloatLabel">
+
+            <EditText
+                android:id="@+id/mateEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/mateEmailHint"
+                android:inputType="textEmailAddress" />
+
+        </com.mattieapps.roommates.systems.FloatLabelLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

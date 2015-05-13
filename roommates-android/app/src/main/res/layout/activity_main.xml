@@ -1,5 +1,4 @@
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,13 +12,7 @@
 
         <!-- We use a Toolbar so that our drawer can be displayed
              in front of the action bar -->
-        <android.support.v7.widget.Toolbar
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/toolbar"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:minHeight="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
+        <include layout="@layout/toolbar" />
 
         <!-- The rest of your content view -->
         <FrameLayout
@@ -39,25 +32,44 @@
 
     -->
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/left_drawer_layout"
         android:layout_width="304dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_gravity="left|start"
-        android:fitsSystemWindows="true"
         android:background="#ffffff"
-        android:id="@+id/left_drawer_layout">
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
 
         <ListView
             android:id="@+id/left_drawer"
-            android:choiceMode="singleChoice"
-            android:layout_height="match_parent"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/customDivider"
+            android:layout_marginTop="8dp"
+            android:choiceMode="singleChoice"
             android:divider="@android:color/transparent"
-            android:dividerHeight="0dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp" />
+            android:dividerHeight="0dp" />
 
-    </LinearLayout>
+        <View
+            android:id="@+id/customDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/left_sub_drawer"
+            android:background="#e6e6e6"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+
+        <ListView
+            android:id="@+id/left_sub_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+
+    </RelativeLayout>
 
 </android.support.v4.widget.DrawerLayout>

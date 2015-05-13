@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015 Andrew Mattie. All Rights Reserved.
+  -->
+
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    android:stateListAnimator="@drawable/elevation_selector"
+    android:background="@drawable/circle"
+    android:elevation="3dp"
+    android:src="@drawable/ic_action_add" />

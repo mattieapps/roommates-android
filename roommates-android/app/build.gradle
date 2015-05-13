@@ -1,19 +1,23 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.mattieapps.roommates"
-        minSdkVersion 15
-        targetSdkVersion 21
-        versionCode 9
-        versionName "1.3"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 16
+        versionName "2.3"
+
+        resConfigs "en", "de", "fr", "it"
+        resConfigs "nodpi", "hdpi", "xhdpi", "xxhdpi", "xxxhdpi"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -21,16 +25,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:support-v4:21.0.3"
-    compile "com.android.support:appcompat-v7:21.0.3"
-    compile 'com.google.android.gms:play-services:6.5.87'
+    compile "com.android.support:support-v4:22.1.1"
+    compile "com.android.support:appcompat-v7:22.1.1"
+    compile 'com.google.android.gms:play-services:7.0.0'
     compile 'com.android.support:cardview-v7:21.0.3'
-
-    compile 'com.afollestad:material-dialogs:0.4.7'
-    compile 'com.nispok:snackbar:2.7.2'
-
-    compile 'com.parse.bolts:bolts-android:1.+'
-    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
-
-    compile 'com.github.kikoso:AppRate-Android:1.0-RELEASE'
+    compile 'com.nispok:snackbar:2.10.2'
+    compile 'io.realm:realm-android:0.80.1'
 }

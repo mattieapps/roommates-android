@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -21,14 +21,16 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/rentPriceText"
         android:hint="@string/rent"
         android:text="@string/zero"
         android:layout_below="@+id/textView"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,12 +50,12 @@
         android:id="@+id/peopleAmountText"
         android:hint="@string/numbOfPeopleHint"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignEnd="@+id/rentPriceText"
         android:layout_alignRight="@+id/rentPriceText"
         android:layout_alignParentRight="true"
-        android:text="@string/zero" />
+        android:text="@string/zero"
+        android:layout_alignLeft="@+id/rentPriceText"
+        android:layout_alignStart="@+id/rentPriceText" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -117,45 +119,62 @@
         android:layout_alignParentRight="true"
         android:visibility="invisible" />
 
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@+id/peopleAmountText"
+        android:layout_gravity="center"
         card_view:cardCornerRadius="4dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/output"
-            android:id="@+id/outputTextView"
-            android:layout_below="@+id/peopleAmountText"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_above="@+id/textView3" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/outputTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/output"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <include
+                android:id="@+id/calculateFabButton"
+                layout="@layout/floating_action_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
     </android.support.v7.widget.CardView>
 
-    <ImageButton
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:id="@+id/calculateFabButton"
-        android:background="@drawable/circle"
-        android:src="@drawable/ic_equal"
-        android:contentDescription="@string/fab"
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make new expense"
+        android:id="@+id/makeRentExpense"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="false" />
 
-        android:stateListAnimator="@drawable/fab_light"
-        android:elevation="2dp"
-        android:layout_below="@+id/peopleAmountText"
-        android:layout_alignRight="@+id/peopleAmountText"
-        android:layout_alignEnd="@+id/peopleAmountText"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginTop="4dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/moneysymbol"
+        android:id="@+id/textView16"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView2" />
 
 </RelativeLayout>
