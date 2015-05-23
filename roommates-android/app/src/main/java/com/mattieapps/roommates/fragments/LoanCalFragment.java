@@ -27,6 +27,7 @@ public class LoanCalFragment extends Fragment {
     private EditText loanAmountEditText, loanIntrestEditText, loanTermEditText;
     private Spinner loanTermSpinner;
     private Button loanStartDateBtn;
+    private LoanTermState loanTermState;
 
     public static int loanStartYear, loanStartMonth, loanStartDay;
 
@@ -40,10 +41,10 @@ public class LoanCalFragment extends Fragment {
         loanTermSpinner = (Spinner) fragmentView.findViewById(R.id.loanTermSpinner);
         loanStartDateBtn = (Button) fragmentView.findViewById(R.id.loanStartDateBtn);
 
-        loanTermSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        loanTermSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                LoanTermState loanTermState;
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
                         loanTermState = LoanTermState.MONTH;
@@ -54,6 +55,11 @@ public class LoanCalFragment extends Fragment {
                     default:
                         loanTermState = LoanTermState.MONTH;
                 }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
 
