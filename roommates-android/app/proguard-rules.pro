@@ -16,7 +16,4 @@
 #   public *;
 #}
 
--keep class com.parse.* { *; }
--keep class com.enrique.* { *; }
--dontwarn com.parse.**
--dontwarn com.enrique.**
+-keep class com.github.mikephil.charting.** { *; }

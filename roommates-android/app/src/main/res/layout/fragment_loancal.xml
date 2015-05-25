@@ -8,106 +8,112 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loan Amount: $"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_alignBottom="@+id/loanAmountEditText"
+        android:layout_alignParentTop="true"
         android:gravity="bottom"
         android:paddingBottom="5dp"
-        android:layout_alignParentTop="true" />
+        android:text="Loan Amount: $"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
+        android:id="@+id/loanAmountEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/loanAmountEditText"
-        android:layout_gravity="center_horizontal"
         android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_toEndOf="@+id/textView19"
         android:layout_toRightOf="@+id/textView19"
-        android:layout_toEndOf="@+id/textView19" />
+        android:ems="10"
+        android:inputType="numberDecimal" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
         android:id="@+id/loanIntrestEditText"
-        android:layout_toLeftOf="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView19"
+        android:layout_toEndOf="@+id/textView22"
+        android:layout_toLeftOf="@+id/textView23"
         android:layout_toRightOf="@+id/textView22"
-        android:layout_toEndOf="@+id/textView22" />
+        android:ems="10"
+        android:inputType="numberDecimal" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="%"
         android:id="@+id/textView23"
-        android:layout_alignTop="@+id/loanIntrestEditText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/loanIntrestEditText"
-        android:gravity="bottom"
-        android:paddingBottom="6dp" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Intrest Rate per Year"
+        android:layout_alignBottom="@+id/loanIntrestEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/loanIntrestEditText"
+        android:gravity="bottom"
+        android:paddingBottom="6dp"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
         android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/loanIntrestEditText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/loanAmountEditText"
         android:layout_alignTop="@+id/loanIntrestEditText"
         android:layout_toLeftOf="@+id/loanAmountEditText"
-        android:gravity="bottom" />
+        android:layout_toStartOf="@+id/loanAmountEditText"
+        android:gravity="bottom"
+        android:text="Intrest Rate per Year"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
+        android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Loan Term"
-        android:id="@+id/textView24"
-        android:layout_below="@+id/textView22"
+        android:layout_alignBottom="@+id/loanTermEditText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView22"
         android:layout_toLeftOf="@+id/loanIntrestEditText"
         android:layout_toStartOf="@+id/loanIntrestEditText"
-        android:layout_alignBottom="@+id/loanTermEditText"
         android:gravity="bottom"
-        android:paddingBottom="6dp" />
+        android:paddingBottom="6dp"
+        android:text="Loan Term"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
+        android:id="@+id/loanTermEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/loanTermEditText"
         android:layout_below="@+id/loanIntrestEditText"
-        android:layout_toRightOf="@+id/textView22"
         android:layout_toLeftOf="@+id/loanTermSpinner"
-        android:layout_toStartOf="@+id/loanTermSpinner" />
+        android:layout_toRightOf="@+id/textView22"
+        android:layout_toStartOf="@+id/loanTermSpinner"
+        android:ems="10"
+        android:inputType="numberDecimal" />
 
     <Spinner
+        android:id="@+id/loanTermSpinner"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:id="@+id/loanTermSpinner"
-        android:layout_below="@+id/loanIntrestEditText"
-        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/loanTermEditText"
         android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/loanTermEditText" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/loanIntrestEditText" />
 
     <Button
+        android:id="@+id/loanStartDateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set Start Date"
-        android:id="@+id/loanStartDateBtn"
-        android:layout_below="@+id/textView24"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView24"
+        android:text="Set Start Date" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/loanPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/loanStartDateBtn" />
 
 </RelativeLayout>

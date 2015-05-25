@@ -14,8 +14,9 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.github.mikephil.charting.charts.PieChart;
 import com.mattieapps.roommates.R;
-import com.mattieapps.roommates.systems.state.LoanTermState;
+import com.mattieapps.roommates.model.state.LoanTermState;
 
 import java.util.Calendar;
 
@@ -28,6 +29,7 @@ public class LoanCalFragment extends Fragment {
     private Spinner loanTermSpinner;
     private Button loanStartDateBtn;
     private LoanTermState loanTermState;
+    private PieChart pieChart;
 
     public static int loanStartYear, loanStartMonth, loanStartDay;
 
@@ -40,6 +42,7 @@ public class LoanCalFragment extends Fragment {
         loanTermEditText = (EditText) fragmentView.findViewById(R.id.loanTermEditText);
         loanTermSpinner = (Spinner) fragmentView.findViewById(R.id.loanTermSpinner);
         loanStartDateBtn = (Button) fragmentView.findViewById(R.id.loanStartDateBtn);
+        pieChart = (PieChart) fragmentView.findViewById(R.id.loanPieChart);
 
         loanTermSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
