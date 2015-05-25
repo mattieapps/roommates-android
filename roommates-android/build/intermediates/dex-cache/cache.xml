@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.2.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="0a4af6a85230b990eb8690b696d2db9247338611">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-e87ccd59f6b5b62797f73e910748c463a0a75c01.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-7df661ef62d1c61e4d48fafc15f23fcca383757c.jar" />
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-f1be863dec443fe383047840a20a572037b85d36.jar" />
     </item>
     <item
         jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.nispok/snackbar/2.10.2/classes.jar"
@@ -21,20 +14,6 @@
         revision="21.1.2"
         sha1="60a549288edf3b2881c59b3e751cf16e2fa81655">
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-5246227e968e06962f0c4c9594718ccb6120b6d5.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-7df661ef62d1c61e4d48fafc15f23fcca383757c.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-1766899c7bbe76e01c39de4e5edc3d5b974ed03e.jar" />
     </item>
     <item
         jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
@@ -44,41 +23,6 @@
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-613f49d3d122572b544f5e7cc36f207b95a6a331.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-17a60a5d7d2adef6c4c83269793211dd0170a16c.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-ba7b8480752f1b5de98229b8e4087da344a48e9b.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-ff1f4e8157a922750c5f245d9917e1911a4d645e.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="/Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-7e95a3dc9a20c3a23b8b2ded24ca598a4bcfac14.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-88dfc058e51e2a86df46226609addf344c96f023.jar" />
-    </item>
-    <item
         jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.nispok/snackbar/2.10.2/classes.jar"
         jumboMode="false"
         revision="22.0.0"
@@ -91,20 +35,6 @@
         revision="22.0.1"
         sha1="60a549288edf3b2881c59b3e751cf16e2fa81655">
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-5246227e968e06962f0c4c9594718ccb6120b6d5.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-88dfc058e51e2a86df46226609addf344c96f023.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-84c2226d9d6947e73d1e5dcac85ad27cfe092702.jar" />
     </item>
     <item
         jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
@@ -114,95 +44,53 @@
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-111b462d8bbb23de76ffdf7b0c0ee7002ace5614.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-84c2226d9d6947e73d1e5dcac85ad27cfe092702.jar" />
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-09c4fbb48ffc1f88eda943eb8e98bf26df86c1f5.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-a2cfb7db03ff05ea629c5ce59a7b845569f1dd61.jar" />
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-3e108b6594212b8ea2576fdccaa6caaa08254296.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-bcdd888ad6246d53d833fdfc9e1b0fb250f755e5.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-bcdd888ad6246d53d833fdfc9e1b0fb250f755e5.jar" />
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-47434d78b8184d63ba826a1a17ce7c6896d029ec.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-17a60a5d7d2adef6c4c83269793211dd0170a16c.jar" />
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-47c5f09521ad68569646f710d14661923218e4da.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-39ee9ba64f7a86fb34983af3c9cbf083ddf01de5.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.2/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="0d6546c1c73cb64a6907f694e6c4bf4b50fefa70">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-dc366bdfded9ef94e003c59a703e2cc5833c532c.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-4a1b11864773e79a873a200d0f7f96214c7bfa7c.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.2/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="0d6546c1c73cb64a6907f694e6c4bf4b50fefa70">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-dc366bdfded9ef94e003c59a703e2cc5833c532c.jar" />
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-9e1ccafaa62afdc7cbdf815c21a48cfb1e70ee85.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/android-sdks/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/andrewmattie/Documents/GithubWorkspace/roommates/roommates-android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-eb2ff0100e781b5b52ebd5843db97d623d6c60d0.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.2.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="0a4af6a85230b990eb8690b696d2db9247338611">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-e87ccd59f6b5b62797f73e910748c463a0a75c01.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-39ee9ba64f7a86fb34983af3c9cbf083ddf01de5.jar" />
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-85858908599769d482b059a3c3599513d2f5d07b.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.2.2/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="1014d409d1af641616ca7a2b3fda549cf559d605">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-3f3f41b71aa527a7d53cd388812e4d01915e6bd2.jar" />
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-aad35365793b1dd11e2eca56482de436d0910429.jar" />
     </item>
     <item
         jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
@@ -212,81 +100,39 @@
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-613f49d3d122572b544f5e7cc36f207b95a6a331.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-a391c69d946ee6b840fb9be24e04c138268ecbfa.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-07d8017df01277f7f0776d722d4d773f0bcf7c6a.jar" />
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-b25c9c35a02ae95b4a5c74b6e932cd1a67ad4a88.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.1.2/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="158555fbeff80e5a85464a818eadda8a448a1051">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-59d75c3e6cfb25cca1b6473871bab953f2b35510.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-07d8017df01277f7f0776d722d4d773f0bcf7c6a.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.1.2/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="158555fbeff80e5a85464a818eadda8a448a1051">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-59d75c3e6cfb25cca1b6473871bab953f2b35510.jar" />
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-4989d8de8ad466a2daeae939829867efa1810858.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-106b19f74c9821b19a2c18207de997712b30e9a9.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-4a1b11864773e79a873a200d0f7f96214c7bfa7c.jar" />
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-7712dff2ff284541c53a519c6c7acfb45e1f5865.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.2.2/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="1014d409d1af641616ca7a2b3fda549cf559d605">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-3f3f41b71aa527a7d53cd388812e4d01915e6bd2.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-a2cfb7db03ff05ea629c5ce59a7b845569f1dd61.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-106b19f74c9821b19a2c18207de997712b30e9a9.jar" />
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-cf866a0efa16b7936e4f6c65539be091d4079b3d.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-a391c69d946ee6b840fb9be24e04c138268ecbfa.jar" />
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-60e580adb8c5f75e439fcb6dffcfbd7657f6da48.jar" />
     </item>
     <item
         jar="/Users/andrewmattie/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.80.1/af03a682e186ea0ed39e50da86fd9e6ddaaf2240/realm-android-0.80.1.jar"
@@ -296,6 +142,13 @@
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/realm-android-0.80.1-47c3ad8854bf76f85a9d61d96f02d5f7f520c3cb.jar" />
     </item>
     <item
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-0435cd8f45093a8523fb9602790f8375608072b0.jar" />
+    </item>
+    <item
         jar="/Users/andrewmattie/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -303,46 +156,32 @@
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-1940cbc56baaba05ac33e9d82ac371813246be30.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.1.0/ec46f9251e1e0ee60e1b6beae8b16f2e0fdee474/MPAndroidChart-v2.1.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-849687b8fd28ec62e846488a331690945fd69e19.jar" />
+        sha1="ec46f9251e1e0ee60e1b6beae8b16f2e0fdee474">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v2.1.0-4cc7f18e3e5d927f54cc95ac958d17755183e723.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-44fc6f8f2e25833be0538fb833c5c510a1f411f0.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-44fc6f8f2e25833be0538fb833c5c510a1f411f0.jar" />
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-2deaecb45427907d991094862ab2e1e6b5521056.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-f0c3d84a5594d7eb6d64eebbb4b36ebe44b90238.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-dec2e09063e4668b224628c77a949d1ccf04b006.jar" />
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-3586675799c74f59b042643378d341d9a98855e3.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-ba7b8480752f1b5de98229b8e4087da344a48e9b.jar" />
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-0e9af4659026dfc605fe2de79edf763fcc92e781.jar" />
     </item>
     <item
         jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
@@ -359,25 +198,11 @@
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-107e14bb293a41a35fb75485f2f998479c5485ae.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-f0c3d84a5594d7eb6d64eebbb4b36ebe44b90238.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-ff1f4e8157a922750c5f245d9917e1911a4d645e.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-1766899c7bbe76e01c39de4e5edc3d5b974ed03e.jar" />
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-4e34fa09c63b91ad5c172237f00f8b5003dc7002.jar" />
     </item>
     <item
         jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
@@ -387,32 +212,18 @@
         <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-df54e147885f1518023a4e5b1c966df6d1d17919.jar" />
     </item>
     <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-28de23ba4786cc7122c92a03b8d8e86f92bb6c4b.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-dec2e09063e4668b224628c77a949d1ccf04b006.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-849687b8fd28ec62e846488a331690945fd69e19.jar" />
-    </item>
-    <item
-        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-28de23ba4786cc7122c92a03b8d8e86f92bb6c4b.jar" />
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-61e0caa47ed270ab53b12f7475ed53f93c08ee8b.jar" />
+    </item>
+    <item
+        jar="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/andrewmattie/Documents/AndroidStudioProjects/RoomMates/app/build/intermediates/pre-dexed/debug/classes-bd2f12035096fba5089b314fb1f4d12d440aeb7b.jar" />
     </item>
 
 </items>
