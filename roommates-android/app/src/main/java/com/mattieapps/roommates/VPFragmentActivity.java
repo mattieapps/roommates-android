@@ -12,6 +12,7 @@ import com.mattieapps.roommates.fragments.mates.NewMateFragment;
 import com.mattieapps.roommates.fragments.mates.ViewExpenseFragment;
 import com.mattieapps.roommates.fragments.mates.ViewMateFragment;
 import com.mattieapps.roommates.systems.BaseActivity;
+import com.mattieapps.roommates.systems.MattieCommonObjects;
 
 /**
  * Created by andrewmattie on 4/1/15.

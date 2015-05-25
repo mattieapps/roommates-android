@@ -26,10 +26,10 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.mattieapps.roommates.MainActivity;
-import com.mattieapps.roommates.MattieCommonObjects;
+import com.mattieapps.roommates.systems.MattieCommonObjects;
 import com.mattieapps.roommates.R;
-import com.mattieapps.roommates.systems.database.Expense;
-import com.mattieapps.roommates.systems.state.AlarmState;
+import com.mattieapps.roommates.model.database.Expense;
+import com.mattieapps.roommates.model.state.AlarmState;
 
 import java.util.Calendar;
 import java.util.Random;

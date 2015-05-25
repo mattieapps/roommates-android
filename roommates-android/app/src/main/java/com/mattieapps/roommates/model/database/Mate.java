@@ -1,4 +1,4 @@
-package com.mattieapps.roommates.systems.database;
+package com.mattieapps.roommates.model.database;
 
 import io.realm.RealmObject;
 

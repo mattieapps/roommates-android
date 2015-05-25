@@ -13,7 +13,7 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.mattieapps.roommates.R;
-import com.mattieapps.roommates.systems.database.Expense;
+import com.mattieapps.roommates.model.database.Expense;
 
 import io.realm.RealmBaseAdapter;
 import io.realm.RealmResults;

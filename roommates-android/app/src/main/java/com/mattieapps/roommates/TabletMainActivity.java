@@ -25,6 +25,7 @@ import com.mattieapps.roommates.fragments.RentCalFragment;
 import com.mattieapps.roommates.fragments.TipCalFragment;
 import com.mattieapps.roommates.fragments.mates.MateFragment;
 import com.mattieapps.roommates.systems.BaseActivity;
+import com.mattieapps.roommates.systems.MattieCommonObjects;
 import com.mattieapps.roommates.systems.adapters.DrawerListAdapter;
 
 /**

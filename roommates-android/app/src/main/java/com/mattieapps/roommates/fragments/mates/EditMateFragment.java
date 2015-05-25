@@ -13,7 +13,7 @@ import android.widget.EditText;
 
 import com.mattieapps.roommates.MainActivity;
 import com.mattieapps.roommates.R;
-import com.mattieapps.roommates.systems.database.Mate;
+import com.mattieapps.roommates.model.database.Mate;
 
 import io.realm.Realm;
 import io.realm.RealmResults;

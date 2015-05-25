@@ -1,4 +1,4 @@
-package com.mattieapps.roommates;
+package com.mattieapps.roommates.systems;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -10,7 +10,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 
-import com.mattieapps.roommates.systems.database.Alarm;
+import com.mattieapps.roommates.R;
+import com.mattieapps.roommates.model.database.Alarm;
 import com.mattieapps.roommates.systems.notification.NotificationBroadcastReceiver;
 
 import java.util.Calendar;

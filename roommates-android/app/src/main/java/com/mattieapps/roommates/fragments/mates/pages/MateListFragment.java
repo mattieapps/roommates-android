@@ -15,12 +15,12 @@ import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-import com.mattieapps.roommates.MattieCommonObjects;
+import com.mattieapps.roommates.systems.MattieCommonObjects;
 import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.VPFragmentActivity;
 import com.mattieapps.roommates.fragments.mates.ViewMateFragment;
 import com.mattieapps.roommates.systems.adapters.MateCursorAdapter;
-import com.mattieapps.roommates.systems.database.Mate;
+import com.mattieapps.roommates.model.database.Mate;
 
 import io.realm.Realm;
 import io.realm.RealmResults;

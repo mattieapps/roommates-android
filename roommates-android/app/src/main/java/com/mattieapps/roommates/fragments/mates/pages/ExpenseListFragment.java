@@ -17,7 +17,7 @@ import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.VPFragmentActivity;
 import com.mattieapps.roommates.fragments.mates.ViewExpenseFragment;
 import com.mattieapps.roommates.systems.adapters.ExpensesCursorAdapter;
-import com.mattieapps.roommates.systems.database.Expense;
+import com.mattieapps.roommates.model.database.Expense;
 
 import io.realm.Realm;
 import io.realm.RealmQuery;

@@ -7,7 +7,7 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.mattieapps.roommates.R;
-import com.mattieapps.roommates.systems.database.Mate;
+import com.mattieapps.roommates.model.database.Mate;
 
 import io.realm.RealmBaseAdapter;
 import io.realm.RealmResults;
