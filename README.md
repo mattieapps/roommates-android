@@ -3,6 +3,9 @@ RoomMates Mobile App
 
 A mobile app for roommates who need to split their bills for Android
 
+Current Version: 2.2.2
+Development Version: 2.3
+
 
 
 Open Source libs used(Android[Required for source to build])
