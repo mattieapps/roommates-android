@@ -10,6 +10,8 @@ Open Source libs used(Android[Required for source to build])
 
 Snackbar - https://github.com/nispok/snackbar
 
+MPAndroidChart - https://github.com/PhilJay/MPAndroidChart
+
 Icons from http://flaticon.com
 
 Want to help? Thats great!
