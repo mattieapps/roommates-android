@@ -2,6 +2,7 @@ package com.mattieapps.roommates.fragments;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
@@ -9,9 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 import com.github.mikephil.charting.charts.PieChart;
@@ -30,6 +33,7 @@ public class LoanCalFragment extends Fragment {
     private Button loanStartDateBtn;
     private LoanTermState loanTermState;
     private PieChart pieChart;
+    private ImageButton mEqualFab;
 
     public static int loanStartYear, loanStartMonth, loanStartDay;
 
@@ -66,6 +70,10 @@ public class LoanCalFragment extends Fragment {
             }
         });
 
+        ArrayAdapter<CharSequence> loanTermAdapter = ArrayAdapter.createFromResource(getActivity(),
+                R.array.loan_array, android.R.layout.simple_spinner_dropdown_item);
+        loanTermSpinner.setAdapter(loanTermAdapter);
+
         loanStartDateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,5 +109,4 @@ public class LoanCalFragment extends Fragment {
             // Do something with the date chosen by the user
         }
     }
-
 }
