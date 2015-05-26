@@ -47,12 +47,6 @@ public class LoanCalFragment extends Fragment {
         loanTermSpinner = (Spinner) fragmentView.findViewById(R.id.loanTermSpinner);
         loanStartDateBtn = (Button) fragmentView.findViewById(R.id.loanStartDateBtn);
         pieChart = (PieChart) fragmentView.findViewById(R.id.loanPieChart);
-        mEqualFab = (ImageButton) fragmentView.findViewById(R.id.fab);
-
-        mEqualFab.setImageResource(R.drawable.ic_equal);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            mEqualFab.setBackgroundResource(R.drawable.circle_21);
-        }
 
         loanTermSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
@@ -88,12 +82,6 @@ public class LoanCalFragment extends Fragment {
             }
         });
 
-        mEqualFab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         return fragmentView;
     }
