@@ -18,6 +18,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mattieapps.roommates.R;
+import com.mattieapps.roommates.model.Calculator;
+import com.mattieapps.roommates.model.state.CalculatorType;
 import com.nispok.snackbar.Snackbar;
 import com.nispok.snackbar.SnackbarManager;
 import com.nispok.snackbar.listeners.ActionClickListener;
@@ -111,8 +113,7 @@ public class TipCalFragment extends Fragment {
                     mCheckPriceEditText.setText("0");
                 } else {
                     checkPrice = Double.parseDouble(mCheckPriceEditText.getText().toString());
-                    double output = checkPrice + 1;
-                    mCheckPriceEditText.setText(String.valueOf(output));//Convert out to string
+                    mCheckPriceEditText.setText(String.valueOf(Calculator.calculate(checkPrice, 1, CalculatorType.ADD)));//Convert out to string
                 }
             }
         });
@@ -124,8 +125,7 @@ public class TipCalFragment extends Fragment {
                     mCheckPriceEditText.setText("0");
                 } else {
                     checkPrice = Double.parseDouble(mCheckPriceEditText.getText().toString());
-                    double output = checkPrice - 1;
-                    mCheckPriceEditText.setText(String.valueOf(output));//Convert out to string
+                    mCheckPriceEditText.setText(String.valueOf(Calculator.calculate(checkPrice, 1, CalculatorType.SUBTRACT)));//Convert out to string
                 }
             }
         });
@@ -136,8 +136,8 @@ public class TipCalFragment extends Fragment {
                 double price = Double.parseDouble(mCheckPriceEditText.getText().toString());
 
                 if (price != 0 && gratuity != 0) {
-                    double output = price * gratuity / 100;
-                    mOutputTipsText.setText("Tip Amount:\n\n" + Double.toString(output));
+                    mOutputTipsText.setText("Tip Amount:\n\n"
+                            + Double.toString(Calculator.calculate(Calculator.calculate(price, gratuity, CalculatorType.MULTIPLY), 100, CalculatorType.DIVIDE)));
                 } else {
                     Toast.makeText(getActivity(), "'Check Amount' can not be Zero", Toast.LENGTH_SHORT).show();
                 }

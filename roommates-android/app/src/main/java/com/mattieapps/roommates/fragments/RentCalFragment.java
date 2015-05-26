@@ -19,6 +19,8 @@ import android.widget.Toast;
 
 import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.fragments.mates.NewExpenseRentFragment;
+import com.mattieapps.roommates.model.Calculator;
+import com.mattieapps.roommates.model.state.CalculatorType;
 import com.nispok.snackbar.Snackbar;
 import com.nispok.snackbar.SnackbarManager;
 import com.nispok.snackbar.listeners.ActionClickListener;
@@ -71,8 +73,7 @@ public class RentCalFragment extends Fragment {
                     mRentPriceEditText.setText("0");
                 } else {
                     rentPrice = Double.parseDouble(mRentPriceEditText.getText().toString());
-                    double output = rentPrice + 1;
-                    mRentPriceEditText.setText(String.valueOf(output));//Convert out to string
+                    mRentPriceEditText.setText(String.valueOf(Calculator.calculate(rentPrice, 1, CalculatorType.ADD)));//Convert out to string
                 }
             }
         });
@@ -81,8 +82,7 @@ public class RentCalFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 rentPrice = Double.parseDouble(mRentPriceEditText.getText().toString());
-                double output = rentPrice - 1;
-                mRentPriceEditText.setText(String.valueOf(output));//Convert out to string
+                mRentPriceEditText.setText(String.valueOf(Calculator.calculate(rentPrice, 1, CalculatorType.SUBTRACT)));//Convert out to string
             }
         });
 
@@ -90,8 +90,7 @@ public class RentCalFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 peopleCount = Double.parseDouble(mPeopleCountEditText.getText().toString());
-                double output = peopleCount + 1;
-                mPeopleCountEditText.setText(String.valueOf(output));//Convert out to string
+                mPeopleCountEditText.setText(String.valueOf(Calculator.calculate(peopleCount, 1, CalculatorType.ADD)));//Convert out to string
             }
         });
 
@@ -99,8 +98,7 @@ public class RentCalFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 peopleCount = Double.parseDouble(mPeopleCountEditText.getText().toString());
-                double output = peopleCount - 1;
-                mPeopleCountEditText.setText(String.valueOf(output));//Convert out to string
+                mPeopleCountEditText.setText(String.valueOf(Calculator.calculate(peopleCount, 1, CalculatorType.SUBTRACT)));//Convert out to string
             }
         });
 
@@ -111,8 +109,7 @@ public class RentCalFragment extends Fragment {
                 peopleCount = Double.parseDouble(mPeopleCountEditText.getText().toString());
 
                 if (rentPrice != 0 && peopleCount != 0) {
-                    double output = rentPrice / peopleCount;
-                    mOutputText.setText(String.valueOf(output));
+                    mOutputText.setText(String.valueOf(Calculator.calculate(rentPrice, peopleCount, CalculatorType.DIVIDE)));
                     mNewRentExpense.setEnabled(true);
                 } else {
                     Toast.makeText(getActivity(), "'Rent Price' or 'People Count' can not be zero", Toast.LENGTH_SHORT).show();
