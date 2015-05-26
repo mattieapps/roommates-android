@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.model.database.Alarm;
@@ -146,5 +147,13 @@ public class MattieCommonObjects {
 
     private boolean isKitKat() {
         return Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
+    }
+
+    public static void shortToast(Context context, String message) {
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+    }
+
+    public static void longToast(Context context, String message) {
+        Toast.makeText(context, message, Toast.LENGTH_LONG).show();
     }
 }
