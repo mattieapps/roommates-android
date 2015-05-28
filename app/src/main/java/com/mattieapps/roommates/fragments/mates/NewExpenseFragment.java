@@ -26,10 +26,10 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.mattieapps.roommates.MainActivity;
-import com.mattieapps.roommates.systems.MattieCommonObjects;
 import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.model.database.Expense;
 import com.mattieapps.roommates.model.state.AlarmState;
+import com.mattieapps.roommates.systems.MattieCommonObjects;
 
 import java.util.Calendar;
 import java.util.Random;
@@ -74,17 +74,24 @@ public class NewExpenseFragment extends Fragment {
 
         Bundle bundle = this.getArguments();
         if (bundle != null) {
-            mPriceEditText.setText(bundle.getString("rentOutput"));
-            mNameEditText.setText(bundle.getString("newName"));
+            String rent = bundle.getString("rentOutput");
+            String name = bundle.getString("newName");
+            String mate = bundle.getString("involvedMate");
+            if (rent != null) {
+                mPriceEditText.setText(bundle.getString("rentOutput"));
+            }
+            if (name != null) {
+                mNameEditText.setText(bundle.getString("newName"));
+            }
+            if (mate != null) {
+                parties = mate;
+            }
         }
 
         //TODO Remove if alarm code doesn't work
 //        mAlarmFreqSpinner.setVisibility(View.GONE);
 //        reminderFreqText.setVisibility(View.GONE);
 //        alarmTimeBtn.setVisibility(View.GONE);
-
-
-        parties = bundle.getString("involvedMate");
         mPartiesEditText.setText(parties);
 
         ArrayAdapter<CharSequence> statusSpinnerAdapter = ArrayAdapter.createFromResource(
