@@ -34,6 +34,11 @@ public class MainActivity extends BaseActivity {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        if (dbOps.getAllMates().size() == 0 && dbOps.getAllExpenses().size() == 0) {
+            startActivity();
+        }
+        
         if (dbOps.getAllMates().size() != 0) {
             int mateCount = dbOps.getAllMates().size();
 
