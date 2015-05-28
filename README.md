@@ -1,4 +1,4 @@
-RoomMates Mobile App
+RoomMates Android App
 =================
 
 A mobile app for roommates who need to split their bills for Android
