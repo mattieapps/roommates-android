@@ -119,8 +119,7 @@ public class MainActivity extends BaseActivity {
         isTablet = getResources().getBoolean(R.bool.isTablet);
         Intent intent = getIntent();
         boolean gie = intent.getBooleanExtra("goToExpenses", false);
-
-        //todo move somewhere
+        
         if (gie) {
 
 
