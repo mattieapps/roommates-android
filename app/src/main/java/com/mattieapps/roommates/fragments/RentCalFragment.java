@@ -18,7 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mattieapps.roommates.R;
-import com.mattieapps.roommates.fragments.mates.NewExpenseRentFragment;
+import com.mattieapps.roommates.fragments.mates.NewExpenseFragment;
 import com.mattieapps.roommates.model.Calculator;
 import com.mattieapps.roommates.model.state.CalculatorType;
 import com.nispok.snackbar.Snackbar;
@@ -125,7 +125,7 @@ public class RentCalFragment extends Fragment {
                 bundle.putString("newName", "New Rent Expense");
 
 
-                NewExpenseRentFragment fragment = new NewExpenseRentFragment();
+                NewExpenseFragment fragment = new NewExpenseFragment();
 
                 fragment.setArguments(bundle);
 

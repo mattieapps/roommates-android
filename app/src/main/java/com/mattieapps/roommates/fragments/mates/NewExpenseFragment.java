@@ -72,13 +72,18 @@ public class NewExpenseFragment extends Fragment {
         alarmTimeBtn = (Button) fragmentView.findViewById(R.id.newExpenseSetReminderTimeBtn);
         reminderFreqText = (TextView) fragmentView.findViewById(R.id.reminderFreqText);
 
-        //TODO Remove when alarm code works
+        Bundle bundle = this.getArguments();
+        if (bundle != null) {
+            mPriceEditText.setText(bundle.getString("rentOutput"));
+            mNameEditText.setText(bundle.getString("newName"));
+        }
+
+        //TODO Remove if alarm code doesn't work
 //        mAlarmFreqSpinner.setVisibility(View.GONE);
 //        reminderFreqText.setVisibility(View.GONE);
 //        alarmTimeBtn.setVisibility(View.GONE);
 
 
-        Bundle bundle = this.getArguments();
         parties = bundle.getString("involvedMate");
         mPartiesEditText.setText(parties);
 
