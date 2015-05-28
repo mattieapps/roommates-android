@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.mattieapps.roommates"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 16
+        versionName "2.3"
+
+        resConfigs "en", "de", "fr", "it"
+        resConfigs "nodpi", "hdpi", "xhdpi", "xxhdpi", "xxxhdpi"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "com.android.support:support-v4:22.1.1"
+    compile "com.android.support:appcompat-v7:22.1.1"
+    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile 'com.nispok:snackbar:2.10.2'
+    compile 'io.realm:realm-android:0.80.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.0'
+//    compile 'com.backendless:android:1.16'
+}

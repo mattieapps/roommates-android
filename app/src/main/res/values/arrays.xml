@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="loan_array">
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+</resources>
