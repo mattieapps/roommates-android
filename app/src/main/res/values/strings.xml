@@ -71,7 +71,7 @@
         <item>22%</item>
     </string-array>
 
-    <string name="involvedPartiesEditText">Involved Parties(separate by comas)</string>
+    <string name="involvedPartiesEditText">Involved Person</string>
     <string name="expensePriceHint">Expense Price</string>
     <string name="expenseNameHint">Expense Name</string>
     <string name="mateNameHint">Mate Name</string>
