@@ -15,6 +15,8 @@ Snackbar - https://github.com/nispok/snackbar
 
 MPAndroidChart - https://github.com/PhilJay/MPAndroidChart
 
+google-services.json file for AppInstall - https://developers.google.com
+
 Icons from http://flaticon.com
 
 Want to help? Thats great!
