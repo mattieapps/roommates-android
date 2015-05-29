@@ -29,7 +29,7 @@ import com.mattieapps.roommates.fragments.RentCalFragment;
 import com.mattieapps.roommates.fragments.TipCalFragment;
 import com.mattieapps.roommates.fragments.mates.MateFragment;
 import com.mattieapps.roommates.systems.BaseActivity;
-import com.mattieapps.roommates.systems.MattieCommonObjects;
+import com.mattieapps.roommates.systems.MattieUtils;
 import com.mattieapps.roommates.systems.adapters.DrawerListAdapter;
 
 public class PhoneMainActivity extends BaseActivity {
@@ -58,7 +58,7 @@ public class PhoneMainActivity extends BaseActivity {
 
     private RelativeLayout drawer_list_item;
 
-    private MattieCommonObjects mattieCommonObjects;
+    private MattieUtils mattieUtils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +70,7 @@ public class PhoneMainActivity extends BaseActivity {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
-        mattieCommonObjects = new MattieCommonObjects(getApplicationContext(), fragmentManager, fragmentTransaction);
+        mattieUtils = new MattieUtils(getApplicationContext(), fragmentManager, fragmentTransaction);
 
         nav_drawer_items = new String[]{
                 "Expenses",
@@ -110,20 +110,20 @@ public class PhoneMainActivity extends BaseActivity {
         Intent goToExpensesIntent = getIntent();
         boolean gte = goToExpensesIntent.getBooleanExtra("goToExpenses", false);
         if (gte) {
-            mattieCommonObjects.fragmentMethod(mateFragment);
+            mattieUtils.fragmentMethod(mateFragment);
         } else {
             switch (startFragment) {
                 case "Expenses":
-                    mattieCommonObjects.fragmentMethod(mateFragment);
+                    mattieUtils.fragmentMethod(mateFragment);
                     break;
                 case "Rent":
-                    mattieCommonObjects.fragmentMethod(rentCalFragment);
+                    mattieUtils.fragmentMethod(rentCalFragment);
                     break;
                 case "Tip":
-                    mattieCommonObjects.fragmentMethod(tipCalFragment);
+                    mattieUtils.fragmentMethod(tipCalFragment);
                     break;
                 case "Loan Calculator":
-                    mattieCommonObjects.fragmentMethod(loanCalFragment);
+                    mattieUtils.fragmentMethod(loanCalFragment);
                     break;
                 default:
                     startFragment = "Expenses";
@@ -234,16 +234,16 @@ public class PhoneMainActivity extends BaseActivity {
 
             switch (position) {
                 case 0:
-                    mattieCommonObjects.fragmentMethod(mateFragment);
+                    mattieUtils.fragmentMethod(mateFragment);
                     break;
                 case 1:
-                    mattieCommonObjects.fragmentMethod(rentCalFragment);
+                    mattieUtils.fragmentMethod(rentCalFragment);
                     break;
                 case 2:
-                    mattieCommonObjects.fragmentMethod(tipCalFragment);
+                    mattieUtils.fragmentMethod(tipCalFragment);
                     break;
                 case 3:
-                    mattieCommonObjects.fragmentMethod(loanCalFragment);
+                    mattieUtils.fragmentMethod(loanCalFragment);
                     break;
 
                 default:
@@ -260,7 +260,7 @@ public class PhoneMainActivity extends BaseActivity {
 
             switch (position) {
                 case 0:
-                    mattieCommonObjects.fragmentMethod(aboutFragment);
+                    mattieUtils.fragmentMethod(aboutFragment);
                     break;
                 case 1:
                     Intent shareIntent = new Intent(Intent.ACTION_SEND);

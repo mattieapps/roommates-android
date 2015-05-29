@@ -21,7 +21,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.mattieapps.roommates.MainActivity;
-import com.mattieapps.roommates.systems.MattieCommonObjects;
+import com.mattieapps.roommates.systems.MattieUtils;
 import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.VPFragmentActivity;
 import com.mattieapps.roommates.systems.adapters.ExpensesCursorAdapter;
@@ -46,7 +46,7 @@ public class ViewMateFragment extends Fragment {
     private int rowIndex;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
-    private MattieCommonObjects mattieCommonObjects;
+    private MattieUtils mattieUtils;
     private SharedPreferences mSharedPreferences;
 
     private Realm realm;
@@ -60,7 +60,7 @@ public class ViewMateFragment extends Fragment {
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
-        mattieCommonObjects = new MattieCommonObjects(getActivity(), fragmentManager, fragmentTransaction);
+        mattieUtils = new MattieUtils(getActivity(), fragmentManager, fragmentTransaction);
 
         Bundle bundle = this.getArguments();
         name = bundle.getString("mateName", "");
@@ -121,7 +121,7 @@ public class ViewMateFragment extends Fragment {
                 bundle.putLong("expenseId", expenseId);
                 fragment.setArguments(bundle);
 
-                mattieCommonObjects.fragmentMethod(R.id.vp_content_frame, fragment, true);
+                mattieUtils.fragmentMethod(R.id.vp_content_frame, fragment, true);
 
 //                http://stackoverflow.com/questions/13903013/how-to-get-the-listitem-text-value-when-click-on-it
             }
@@ -157,7 +157,7 @@ public class ViewMateFragment extends Fragment {
                 bundle.putInt("rowIndex", rowIndex);
                 fragment.setArguments(bundle);
 
-                mattieCommonObjects.fragmentMethod(R.id.vp_content_frame, fragment, true);
+                mattieUtils.fragmentMethod(R.id.vp_content_frame, fragment, true);
 
 
                 break;

@@ -12,7 +12,7 @@ import com.mattieapps.roommates.fragments.mates.NewMateFragment;
 import com.mattieapps.roommates.fragments.mates.ViewExpenseFragment;
 import com.mattieapps.roommates.fragments.mates.ViewMateFragment;
 import com.mattieapps.roommates.systems.BaseActivity;
-import com.mattieapps.roommates.systems.MattieCommonObjects;
+import com.mattieapps.roommates.systems.MattieUtils;
 
 /**
  * Created by andrewmattie on 4/1/15.
@@ -20,7 +20,7 @@ import com.mattieapps.roommates.systems.MattieCommonObjects;
 public class VPFragmentActivity extends BaseActivity {
 
     private int fragmentToLoad;
-    private MattieCommonObjects mattieCommonObjects;
+    private MattieUtils mattieUtils;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
     private Toolbar mToolbar;
@@ -34,7 +34,7 @@ public class VPFragmentActivity extends BaseActivity {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
-        mattieCommonObjects = new MattieCommonObjects(getApplicationContext(), fragmentManager, fragmentTransaction);
+        mattieUtils = new MattieUtils(getApplicationContext(), fragmentManager, fragmentTransaction);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(mToolbar);
@@ -64,11 +64,11 @@ public class VPFragmentActivity extends BaseActivity {
                 viewMateBundle.putLong("mateId", mateId);
                 mateFragment.setArguments(viewMateBundle);
 
-                mattieCommonObjects.fragmentMethod(R.id.vp_content_frame, mateFragment);
+                mattieUtils.fragmentMethod(R.id.vp_content_frame, mateFragment);
                 break;
             case 1:
                 NewMateFragment newMateFragment = new NewMateFragment();
-                mattieCommonObjects.fragmentMethod(R.id.vp_content_frame, newMateFragment);
+                mattieUtils.fragmentMethod(R.id.vp_content_frame, newMateFragment);
                 break;
             case 2:
                 NewExpenseFragment newExpenseFragment = new NewExpenseFragment();
@@ -77,7 +77,7 @@ public class VPFragmentActivity extends BaseActivity {
                 newExpenseBundle.putString("involvedMate", intent.getStringExtra("involvedMate"));
                 newExpenseFragment.setArguments(newExpenseBundle);
 
-                mattieCommonObjects.fragmentMethod(R.id.vp_content_frame, newExpenseFragment);
+                mattieUtils.fragmentMethod(R.id.vp_content_frame, newExpenseFragment);
                 break;
             case 3:
                 ViewExpenseFragment viewExpenseFragment = new ViewExpenseFragment();
@@ -98,7 +98,7 @@ public class VPFragmentActivity extends BaseActivity {
 
                 viewExpenseFragment.setArguments(viewExpenseBundle);
 
-                mattieCommonObjects.fragmentMethod(R.id.vp_content_frame, viewExpenseFragment);
+                mattieUtils.fragmentMethod(R.id.vp_content_frame, viewExpenseFragment);
                 break;
             default:
                 fragmentToLoad = 0;

@@ -15,7 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-import com.mattieapps.roommates.systems.MattieCommonObjects;
+import com.mattieapps.roommates.systems.MattieUtils;
 import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.VPFragmentActivity;
 import com.mattieapps.roommates.fragments.mates.ViewMateFragment;
@@ -33,7 +33,7 @@ public class MateListFragment extends Fragment {
     private ListView mListView;
     private ImageButton mNewMateFab;
     private MateCursorAdapter mateCursorAdapter;
-    private MattieCommonObjects mattieCommonObjects;
+    private MattieUtils mattieUtils;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
@@ -42,7 +42,7 @@ public class MateListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View fragmentView = inflater.inflate(R.layout.fragpage_matelist, container, false);
 
-        mattieCommonObjects = new MattieCommonObjects(getActivity());
+        mattieUtils = new MattieUtils(getActivity());
         fragmentManager = getChildFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 

@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.mattieapps.roommates.MainActivity;
-import com.mattieapps.roommates.systems.MattieCommonObjects;
+import com.mattieapps.roommates.systems.MattieUtils;
 import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.model.database.Mate;
 
@@ -26,7 +26,7 @@ import io.realm.Realm;
 public class NewMateFragment extends Fragment {
 
     private EditText mNameEditText, mEmailEditText;
-    private MattieCommonObjects mattieCommonObjects;
+    private MattieUtils mattieUtils;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
@@ -34,7 +34,7 @@ public class NewMateFragment extends Fragment {
         getActivity().setTitle("New Mate");
         final View fragmentView = inflater.inflate(R.layout.fragment_newmate, container, false);
 
-        mattieCommonObjects = new MattieCommonObjects(getActivity());
+        mattieUtils = new MattieUtils(getActivity());
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 

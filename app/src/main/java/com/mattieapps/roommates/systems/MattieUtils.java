@@ -22,17 +22,17 @@ import io.realm.Realm;
 /**
  * Created by andrewmattie on 3/10/15.
  */
-public class MattieCommonObjects {
+public class MattieUtils {
 
     private Context context;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
-    public MattieCommonObjects(Context context) {
+    public MattieUtils(Context context) {
         this.context = context;
     }
 
-    public MattieCommonObjects(Context context, FragmentManager fragmentManager, FragmentTransaction fragmentTransaction) {
+    public MattieUtils(Context context, FragmentManager fragmentManager, FragmentTransaction fragmentTransaction) {
         this.context = context;
         this.fragmentManager = fragmentManager;
         this.fragmentTransaction = fragmentTransaction;

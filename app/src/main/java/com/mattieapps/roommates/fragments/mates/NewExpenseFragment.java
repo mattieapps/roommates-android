@@ -31,7 +31,7 @@ import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.model.database.Expense;
 import com.mattieapps.roommates.model.database.Mate;
 import com.mattieapps.roommates.model.state.AlarmState;
-import com.mattieapps.roommates.systems.MattieCommonObjects;
+import com.mattieapps.roommates.systems.MattieUtils;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -49,7 +49,7 @@ public class NewExpenseFragment extends Fragment {
     private AutoCompleteTextView mPartiesEditText;
     private Spinner mStatusSpinner, mAlarmFreqSpinner;
     private Button alarmTimeBtn;
-    private MattieCommonObjects mattieCommonObjects;
+    private MattieUtils mattieUtils;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
     public static TextView reminderFreqText;
@@ -65,7 +65,7 @@ public class NewExpenseFragment extends Fragment {
         getActivity().setTitle("New Expense");
         final View fragmentView = inflater.inflate(R.layout.fragment_newexpense, container, false);
 
-        mattieCommonObjects = new MattieCommonObjects(getActivity());
+        mattieUtils = new MattieUtils(getActivity());
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
@@ -307,7 +307,7 @@ public class NewExpenseFragment extends Fragment {
                         if (showButton) {
                             expense.setAlarmId(randomId);
                             expense.setHasAlarmSet(true);
-                            mattieCommonObjects.setAlarm(name, price, alarmDay, alarmMonth, alarmYear
+                            mattieUtils.setAlarm(name, price, alarmDay, alarmMonth, alarmYear
                                     , alarmHour, alarmMinute, alarmType, randomId);
                         } else {
                             expense.setAlarmId(0);
