@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -28,20 +29,24 @@ import android.widget.TimePicker;
 import com.mattieapps.roommates.MainActivity;
 import com.mattieapps.roommates.R;
 import com.mattieapps.roommates.model.database.Expense;
+import com.mattieapps.roommates.model.database.Mate;
 import com.mattieapps.roommates.model.state.AlarmState;
 import com.mattieapps.roommates.systems.MattieCommonObjects;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Random;
 
 import io.realm.Realm;
+import io.realm.RealmResults;
 
 /**
  * Created by andrewmattie on 3/2/15.
  */
 public class NewExpenseFragment extends Fragment {
 
-    private EditText mNameEditText, mPriceEditText, mPartiesEditText;
+    private EditText mNameEditText, mPriceEditText;
+    private AutoCompleteTextView mPartiesEditText;
     private Spinner mStatusSpinner, mAlarmFreqSpinner;
     private Button alarmTimeBtn;
     private MattieCommonObjects mattieCommonObjects;
@@ -66,7 +71,7 @@ public class NewExpenseFragment extends Fragment {
 
         mNameEditText = (EditText) fragmentView.findViewById(R.id.expenseNameEditText);
         mPriceEditText = (EditText) fragmentView.findViewById(R.id.expensePriceEditText);
-        mPartiesEditText = (EditText) fragmentView.findViewById(R.id.expenseInvolvedPartiesEditText);
+        mPartiesEditText = (AutoCompleteTextView) fragmentView.findViewById(R.id.expenseInvolvedPartiesEditText);
         mStatusSpinner = (Spinner) fragmentView.findViewById(R.id.expenseStatusSpinner);
         mAlarmFreqSpinner = (Spinner) fragmentView.findViewById(R.id.expenseAlarmFreqSpinner);
         alarmTimeBtn = (Button) fragmentView.findViewById(R.id.newExpenseSetReminderTimeBtn);
@@ -87,6 +92,23 @@ public class NewExpenseFragment extends Fragment {
                 parties = mate;
             }
         }
+
+        Realm realm = Realm.getInstance(getActivity());
+        RealmResults<Mate> realmResults = realm.allObjects(Mate.class);
+        ArrayList<String> mateList = new ArrayList<>();
+
+        if (realmResults != null) {
+            int i1 = 0;
+            for (int i = realmResults.size(); i >= 1; i--) {
+                Mate mate = realmResults.get(i1);
+                mateList.add(mate.getName());
+
+                i1++;
+            }
+        }
+
+        ArrayAdapter<String> partiesAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, mateList);
+        mPartiesEditText.setAdapter(partiesAdapter);
 
         //TODO Remove if alarm code doesn't work
 //        mAlarmFreqSpinner.setVisibility(View.GONE);
