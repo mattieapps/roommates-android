@@ -4,7 +4,7 @@ RoomMates Android App
 A mobile app for roommates who need to split their bills for Android
 
 Current Version: 2.2.2
-Development Version: 2.3
+Development Version: 3.0(not pushed yet)
 
 
 
